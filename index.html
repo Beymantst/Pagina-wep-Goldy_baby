@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GoldyBaby S.A.S. — ECCI University 2026</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos: utilidades compiladas (no editar a mano) y estilos propios -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <!-- Icono de algodon reutilizable: <svg class="algodon"><use href="#icono-algodon"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icono-algodon" viewBox="0 0 64 64">
+      <g fill="#fff" stroke="#E3CFDA" stroke-width="3">
+        <circle cx="21" cy="27" r="12"/><circle cx="43" cy="27" r="12"/><circle cx="32" cy="17" r="12"/>
+        <circle cx="22" cy="40" r="11"/><circle cx="42" cy="40" r="11"/><circle cx="32" cy="35" r="13"/>
+      </g>
+      <g fill="#fff">
+        <circle cx="21" cy="27" r="12"/><circle cx="43" cy="27" r="12"/><circle cx="32" cy="17" r="12"/>
+        <circle cx="22" cy="40" r="11"/><circle cx="42" cy="40" r="11"/><circle cx="32" cy="35" r="13"/>
+      </g>
+      <path d="M32 62 L16 46 L26 49 L32 42 L38 49 L48 46 Z" fill="#EBB9C9" stroke="#D99AB0" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <!-- ===== CARGADOR: la ruta del algodon Brasil -> Colombia ===== -->
+  <div id="cargador" class="cargador" role="status" aria-live="polite" data-canal="rojo">
+    <svg class="algodon cargador__copo" style="left:8%; animation-delay:0s; animation-duration:7s; width:26px; height:26px"><use href="#icono-algodon"/></svg><svg class="algodon cargador__copo" style="left:22%; animation-delay:2.2s; animation-duration:8s; width:20px; height:20px"><use href="#icono-algodon"/></svg><svg class="algodon cargador__copo" style="left:38%; animation-delay:0.8s; animation-duration:6.5s; width:30px; height:30px"><use href="#icono-algodon"/></svg><svg class="algodon cargador__copo" style="left:61%; animation-delay:3.1s; animation-duration:7.5s; width:22px; height:22px"><use href="#icono-algodon"/></svg><svg class="algodon cargador__copo" style="left:77%; animation-delay:1.4s; animation-duration:8.5s; width:28px; height:28px"><use href="#icono-algodon"/></svg><svg class="algodon cargador__copo" style="left:91%; animation-delay:4s; animation-duration:7s; width:20px; height:20px"><use href="#icono-algodon"/></svg>
+    <div class="cargador__tarjeta">
+      <div class="cargador__logo"><img src="img/logo.png" alt="GoldyBaby"></div>
+      <h1 class="cargador__titulo">Goldy<span>Baby</span></h1>
+      <p class="cargador__sub">Cotton route · Brazil → Colombia</p>
+      <div class="cargador__escena">
+        <svg class="cargador__svg" viewBox="0 0 360 130" aria-hidden="true">
+          <g class="planta">
+            <path d="M30 108 V64" stroke="#7FB069" stroke-width="3" stroke-linecap="round"/>
+            <path d="M30 96 q-12 -4 -17 -15 M30 86 q12 -4 17 -15" stroke="#7FB069" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <use class="bola bola--1" href="#icono-algodon" x="2" y="52" width="24" height="24"/>
+            <use class="bola bola--2" href="#icono-algodon" x="34" y="52" width="24" height="24"/>
+            <use class="bola bola--3" href="#icono-algodon" x="18" y="34" width="26" height="26"/>
+          </g>
+          <g class="puerto">
+            <rect x="316" y="78" width="40" height="34" fill="#3F4E73"/>
+            <rect x="320" y="64" width="16" height="14" fill="#F2C9D6"/><rect x="338" y="64" width="16" height="14" fill="#B7DCF4"/><rect x="329" y="50" width="16" height="14" fill="#FBE5A0"/>
+            <path d="M310 108 V24 H346" stroke="#4A93CC" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+            <g class="gancho"><path d="M338 24 V40" stroke="#3F4E73" stroke-width="1.6"/><rect x="333" y="40" width="10" height="6" rx="1.5" fill="#3F4E73"/></g>
+          </g>
+          <g class="olas olas--atras" fill="#B7DCF4" opacity=".75"><path d="M-60 108 q15 -7 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 V132 H-60 Z"/></g>
+          <g class="barco">
+            <g class="barco__casco">
+              <rect x="4" y="-30" width="16" height="14" rx="3" fill="#fff" stroke="#E3CFDA"/><path d="M9 -30 V-16 M15 -30 V-16" stroke="#D99AB0" stroke-width="1.2"/>
+              <rect x="22" y="-30" width="16" height="14" rx="3" fill="#fff" stroke="#E3CFDA"/><path d="M27 -30 V-16 M33 -30 V-16" stroke="#D99AB0" stroke-width="1.2"/>
+              <rect x="4" y="-15" width="16" height="14" rx="3" fill="#fff" stroke="#E3CFDA"/><path d="M9 -15 V-1 M15 -15 V-1" stroke="#D99AB0" stroke-width="1.2"/>
+              <rect x="22" y="-15" width="16" height="14" rx="3" fill="#fff" stroke="#E3CFDA"/><path d="M27 -15 V-1 M33 -15 V-1" stroke="#D99AB0" stroke-width="1.2"/>
+              <rect x="40" y="-15" width="16" height="14" rx="3" fill="#fff" stroke="#E3CFDA"/><path d="M45 -15 V-1 M51 -15 V-1" stroke="#D99AB0" stroke-width="1.2"/>
+              <rect x="58" y="-24" width="14" height="23" rx="2" fill="#B7DCF4" stroke="#4A93CC" stroke-width="1.2"/><rect x="61" y="-19" width="8" height="6" rx="1" fill="#fff"/>
+              <path d="M0 -1 H76 L66 15 H10 Z" fill="#3F4E73"/><path d="M6 4 H70" stroke="#F2C9D6" stroke-width="2"/>
+            </g>
+          </g>
+          <g class="olas" fill="#4A93CC" opacity=".55"><path d="M-60 104 q15 -9 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 V132 H-60 Z"/></g>
+        </svg>
+        <div class="cargador__puertos"><span>🇧🇷 Santos</span><span>Cartagena 🇨🇴</span></div>
+      </div>
+      <div class="cargador__hilo"><span class="cargador__puntada"></span><span class="cargador__aguja"><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M8 6 H35 L40 6" stroke="#8E96AE" stroke-width="2.6" stroke-linecap="round"/><path d="M0 6 H9" stroke="#4A93CC" stroke-width="2" stroke-linecap="round"/><ellipse cx="9.5" cy="6" rx="2.3" ry="1.3" fill="#fff" stroke="#8E96AE" stroke-width=".8"/></svg></span></div>
+      <p class="cargador__estado"><span id="cargadorEstado">Picking cotton in Mato Grosso…</span><output id="cargadorPorcentaje">0%</output></p>
+      <div class="cargador__canal"><span>Customs channel</span><span class="luces"><i></i><i></i><i></i></span></div>
+    </div>
+  </div>
+
+  <!-- Hilo de coser: avanza con el scroll -->
+  <div id="hiloProgreso" class="hilo" aria-hidden="true"><span class="hilo__linea"></span><span class="hilo__aguja"><svg viewBox="0 0 40 12" aria-hidden="true"><path d="M8 6 H35 L40 6" stroke="#8E96AE" stroke-width="2.6" stroke-linecap="round"/><path d="M0 6 H9" stroke="#4A93CC" stroke-width="2" stroke-linecap="round"/><ellipse cx="9.5" cy="6" rx="2.3" ry="1.3" fill="#fff" stroke="#8E96AE" stroke-width=".8"/></svg></span></div>
+
+  <div id="root">
+    <div class="min-h-screen bg-[#FFF9F7] text-[#3F4E73] selection:bg-[#B7DCF4]/40 pagina">
+      <div class="w-full bg-[#3F4E73] text-[#FFF9F7] text-[11px] sm:text-xs tracking-[0.14em] uppercase font-bold py-2.5 text-center z-[60] relative"><span class="inline-flex items-center gap-2 flex-wrap justify-center"><span class="w-1.5 h-1.5 rounded-full bg-[#B7DCF4] animate-pulse"></span>UNIVERSITY PROJECT — ECCI 2026 — NOT A REAL STORE — 100% Hypoallergenic Baby Wear<span class="w-1.5 h-1.5 rounded-full bg-[#F2C9D6] animate-pulse"></span></span></div>
+      <header class="sticky top-0 z-50 transition-all duration-300 bg-transparent py-4" id="encabezado">
+        <div class="max-w-[1220px] mx-auto px-5 lg:px-8 flex items-center justify-between">
+          <button class="flex items-center gap-3 group" data-destino="home" type="button"><img alt="GoldyBaby" class="h-10 w-10 object-contain rounded-full shadow-sm group-hover:scale-105 transition-transform bg-white p-1 border border-[#F9E1E8]" src="img/logo.png"><span class="font-extrabold tracking-tight text-[18px] leading-none" style="font-family: Fredoka, sans-serif;">Goldy<span class="text-[#4A93CC]">Baby</span></span></button>
+          <nav class="hidden lg:flex items-center gap-1 bg-white/75 backdrop-blur rounded-full p-1.5 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#F9E1E8]">
+            <button class="px-3.5 py-2 rounded-full text-[13px] font-bold hover:bg-[#3F4E73] hover:text-white transition-colors" data-destino="logo-meaning" type="button">Logo &amp; Meaning</button>
+            <button class="px-3.5 py-2 rounded-full text-[13px] font-bold hover:bg-[#3F4E73] hover:text-white transition-colors" data-destino="reason" type="button">Reason</button>
+            <button class="px-3.5 py-2 rounded-full text-[13px] font-bold hover:bg-[#3F4E73] hover:text-white transition-colors" data-destino="objectives" type="button">Objectives</button>
+            <button class="px-3.5 py-2 rounded-full text-[13px] font-bold hover:bg-[#3F4E73] hover:text-white transition-colors" data-destino="brazil" type="button">Why Brazil?</button>
+            <button class="px-3.5 py-2 rounded-full text-[13px] font-bold hover:bg-[#3F4E73] hover:text-white transition-colors" data-destino="capital" type="button">Capital</button>
+            <button class="px-3.5 py-2 rounded-full text-[13px] font-bold hover:bg-[#3F4E73] hover:text-white transition-colors" data-destino="imports" type="button">Imports</button>
+          </nav>
+          <div class="hidden lg:block">
+            <button class="bg-[#3F4E73] text-white rounded-full px-5 py-2.5 text-sm font-bold hover:bg-black transition-colors shadow-sm" data-destino="imports" type="button">Import Docs →</button>
+          </div>
+          <button class="lg:hidden w-10 h-10 rounded-full bg-white border border-[#F9E1E8] flex items-center justify-center shadow-sm" id="botonMenu" aria-label="Abrir menú" type="button"><div class="space-y-1.5 linea-menu"><div class="w-4 h-0.5 bg-[#3F4E73] transition linea-menu"></div><div class="w-4 h-0.5 bg-[#3F4E73] transition"></div></div></button>
+        </div>
+        <div id="menuMovil" class="hidden lg:hidden absolute top-full left-0 right-0 bg-[#FFF9F7] border-t border-[#F9E1E8] p-5 shadow-xl">
+          <div class="menu-vertical">
+            <button type="button" data-destino="logo-meaning" class="text-left px-4 py-3 rounded-2xl font-bold bg-white border border-[#F9E1E8] hover:bg-[#3F4E73] hover:text-white transition text-sm">Logo &amp; Meaning</button>
+            <button type="button" data-destino="reason" class="text-left px-4 py-3 rounded-2xl font-bold bg-white border border-[#F9E1E8] hover:bg-[#3F4E73] hover:text-white transition text-sm">Reason</button>
+            <button type="button" data-destino="objectives" class="text-left px-4 py-3 rounded-2xl font-bold bg-white border border-[#F9E1E8] hover:bg-[#3F4E73] hover:text-white transition text-sm">Objectives</button>
+            <button type="button" data-destino="brazil" class="text-left px-4 py-3 rounded-2xl font-bold bg-white border border-[#F9E1E8] hover:bg-[#3F4E73] hover:text-white transition text-sm">Why Brazil?</button>
+            <button type="button" data-destino="capital" class="text-left px-4 py-3 rounded-2xl font-bold bg-white border border-[#F9E1E8] hover:bg-[#3F4E73] hover:text-white transition text-sm">Capital</button>
+            <button type="button" data-destino="imports" class="text-left px-4 py-3 rounded-2xl font-bold bg-white border border-[#F9E1E8] hover:bg-[#3F4E73] hover:text-white transition text-sm">Import Docs</button>
+          </div>
+        </div>
+      </header>
+      <!-- ===== INICIO (hero) ===== -->
+      <section id="home" class="relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute -top-24 -left-32 w-[620px] h-[520px] bg-[#F9E1E8] rounded-[60%_40%_70%_30%/40%_60%_30%_70%] opacity-80 blur-[1px]" style="animation: float 7s ease-in-out infinite;"></div>
+          <div class="absolute top-10 right-[-80px] w-[520px] h-[500px] bg-[#B7DCF4]/60 rounded-[40%_60%_30%_70%/60%_30%_70%_40%] opacity-80" style="animation: float2 8s ease-in-out infinite;"></div>
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[300px] bg-white rounded-[50%] opacity-70"></div>
+          <div class="absolute top-24 left-[12%] text-3xl opacity-60" style="animation: drift 6s ease-in-out infinite;">☁️</div>
+          <div class="decor-algodon" style="top:150px; right:18%; width:38px; height:38px; animation-duration:5s;"><svg class="algodon w-full h-full"><use href="#icono-algodon"/></svg></div><div class="decor-algodon" style="top:380px; left:5%; width:30px; height:30px; animation-duration:8s;"><svg class="algodon w-full h-full"><use href="#icono-algodon"/></svg></div><div class="decor-algodon" style="top:60px; left:46%; width:26px; height:26px; animation-duration:6s;"><svg class="algodon w-full h-full"><use href="#icono-algodon"/></svg></div><div class="decor-algodon" style="bottom:90px; right:6%; width:34px; height:34px; animation-duration:9s;"><svg class="algodon w-full h-full"><use href="#icono-algodon"/></svg></div>
+        </div>
+        <div class="relative max-w-[1220px] mx-auto px-5 lg:px-8 pt-8 pb-14 md:pt-14 md:pb-20">
+          <div class="mb-8 flex flex-wrap gap-2 justify-center md:justify-start"><span class="inline-flex items-center gap-1.5 bg-[#3F4E73] text-white rounded-full px-3.5 py-1.5 text-[11px] font-extrabold tracking-wide shadow">✓ 1. Logo (English)</span><span class="inline-flex items-center gap-1.5 bg-[#3F4E73] text-white rounded-full px-3.5 py-1.5 text-[11px] font-extrabold tracking-wide shadow">✓ 2. Objective(s)</span><span class="inline-flex items-center gap-1.5 bg-[#3F4E73] text-white rounded-full px-3.5 py-1.5 text-[11px] font-extrabold tracking-wide shadow">✓ 3. Reason</span><span class="inline-flex items-center gap-1.5 bg-[#3F4E73] text-white rounded-full px-3.5 py-1.5 text-[11px] font-extrabold tracking-wide shadow">✓ 4. Reason x Logo</span></div>
+          <div class="grid md:grid-cols-[1.15fr_0.85fr] gap-8 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 bg-white border border-[#F9E1E8] rounded-full px-3 py-1.5 text-xs font-bold tracking-wide shadow-sm mb-5"><span class="w-6 h-6 rounded-full bg-[#4A93CC] text-white grid place-items-center text-[11px]">✦</span>Colombian Company • 100% Hypoallergenic Baby Wear • Brazil Import Plan</div>
+              <h1 class="text-[40px] sm:text-[54px] lg:text-[64px] leading-[0.9] tracking-[-0.03em] font-extrabold" style="font-family: Fredoka, sans-serif;"><span class="block">Soft as a</span><span class="block relative">Cloud, <span class="absolute -top-1 right-6 text-[#4A93CC] text-2xl rotate-12">♡</span></span><span class="block">Safe as a <span class="text-[#4A93CC]">Hug.</span></span></h1>
+              <p class="mt-5 text-[15px] md:text-[17px] leading-7 text-[#566080] max-w-[560px] font-medium"><strong class="text-[#3F4E73]">GoldyBaby S.A.S.</strong> is a Colombian project focused on <span class="font-bold text-[#3F4E73] bg-[#F9E1E8] px-2 py-0.5 rounded-lg">pajamas and baby clothes that are 100% hypoallergenic</span>. Targeting middle and upper-class families willing to pay more for safe, soft, chemical-free garments. Because in Colombia cotton is not enough and production is reducing, we import from Brazil.</p>
+              <div class="mt-6 grid grid-cols-2 gap-3 max-w-[480px]">
+                <div class="bg-white border border-[#F9E1E8] rounded-2xl p-3.5">
+                  <p class="text-[11px] font-extrabold uppercase tracking-widest text-[#4A93CC]">Tariff ACE-72</p>
+                  <p class="text-[18px] font-extrabold leading-none mt-1">0% vs 40%</p>
+                  <p class="text-[11px] text-[#6B7390] mt-1">Huge saving — ProColombia 2024</p>
+                </div>
+                <div class="bg-[#3F4E73] text-white rounded-2xl p-3.5">
+                  <p class="text-[11px] font-extrabold uppercase tracking-widest text-white/60">Founded</p>
+                  <p class="text-[18px] font-extrabold leading-none mt-1">31-08-26 Monday</p>
+                  <p class="text-[11px] text-white/60 mt-1">ECCI University</p>
+                </div>
+              </div>
+              <div class="mt-7 flex flex-wrap gap-3">
+                <button class="bg-[#3F4E73] text-white rounded-full px-6 py-3 font-bold text-[14px] shadow-[0_10px_24px_rgba(0,0,0,0.15)] hover:translate-y-[-1px] transition-all" data-destino="logo-meaning" type="button">Explore Brand →</button>
+                <button class="bg-white border border-[#F2C9D6] rounded-full px-6 py-3 font-bold text-[14px] hover:bg-[#F9E1E8] transition" data-destino="imports" type="button">See Import Docs</button>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="relative bg-white rounded-[32px] p-6 md:p-8 shadow-[0_24px_60px_rgba(0,0,0,0.08)] border border-[#F9E1E8] rotate-[-1deg] hover:rotate-[0deg] transition-transform duration-500">
+                <div class="absolute top-5 right-5 flex gap-1.5">
+                  <div class="w-2 h-2 rounded-full bg-[#4A93CC]"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#F9E1E8]"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#3F4E73]"></div>
+                </div>
+                <div class="bg-[#FFF9F7] rounded-[24px] p-5 flex items-center justify-center aspect-square relative overflow-hidden">
+                  <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,#F9E1E8_0%,transparent_60%)]"></div>
+                  <img src="img/logo.png" alt="GoldyBaby Logo English" class="relative w-full max-w-[300px] h-auto drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)]">
+                  <div class="absolute top-3 left-3 bg-[#3F4E73] text-white text-[10px] font-extrabold tracking-widest uppercase px-3 py-1.5 rounded-full">EST 31-08-26</div>
+                  <div class="absolute bottom-3 right-3 bg-[#4A93CC] text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow">100% Cotton ☁️</div>
+                </div>
+                <div class="mt-5 flex items-center justify-between">
+                  <div>
+                    <p class="font-extrabold text-[18px] leading-none" style="font-family: Fredoka;">GoldyBaby S.A.S.</p>
+                    <p class="text-[11px] text-[#8E96AE] font-bold mt-1 tracking-wide uppercase">Hypoallergenic • Organic • Soft • Colombia</p>
+                  </div>
+                  <div class="w-10 h-10 rounded-full bg-[#F9E1E8] grid place-items-center">🧸</div>
+                </div>
+              </div>
+              <div class="absolute -bottom-5 -left-3 md:-left-6 bg-[#4A93CC] text-white rounded-[16px] px-4 py-2.5 shadow-[0_10px_24px_rgba(74,147,204,0.35)] rotate-[-3deg] font-bold text-[12px]"><span class="block text-[10px] uppercase tracking-widest opacity-80">Sustainable Import</span><span class="block">🇧🇷 Brazil → Colombia 🇨🇴 • 0% Tariff ACE-72</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== LOGO Y SIGNIFICADO ===== -->
+      <section id="logo-meaning" class="max-w-[1220px] mx-auto px-5 lg:px-8 py-12 md:py-16">
+        <div class="rounded-[32px] bg-white border border-[#F9E1E8] shadow-[0_12px_40px_rgba(0,0,0,0.04)] overflow-hidden">
+          <div class="grid md:grid-cols-[0.95fr_1.05fr] gap-0">
+            <div class="p-7 md:p-10 bg-[#FFF9F7] border-b md:border-b-0 md:border-r border-[#F9E1E8]">
+              <div class="inline-flex items-center gap-2 bg-[#3F4E73] text-white rounded-full px-3 py-1 text-[11px] font-extrabold tracking-widest uppercase">✓ Checklist #1 &amp; #4 — Logo + Reason x Logo</div>
+              <h2 class="mt-4 text-[32px] md:text-[42px] font-extrabold leading-[0.9] tracking-tight" style="font-family: Fredoka;">Logo that <br> feels like <br><span class="text-[#4A93CC]">cotton.</span></h2>
+              <p class="mt-4 text-[14px] leading-6 text-[#6B7390] font-medium">The logo is minimal, circular, baby-friendly. Simple, clean and well-done — just like our clothes. Designed to work in English market while keeping the soft Colombian essence.</p>
+              <div class="mt-8 bg-white rounded-[24px] p-5 border border-[#F9E1E8] flex items-center justify-center">
+                <img src="img/logo.png" alt="Logo English" class="w-[220px] h-auto">
+              </div>
+              <div class="mt-6 flex gap-2 flex-wrap"><span class="bg-[#F9E1E8] rounded-full px-3 py-1 text-[11px] font-bold">Circular badge style</span><span class="bg-[#B7DCF4]/30 rounded-full px-3 py-1 text-[11px] font-bold">EST 31-08-26</span><span class="bg-[#3F4E73] text-white rounded-full px-3 py-1 text-[11px] font-bold">Simple, clean</span></div>
+            </div>
+            <div class="p-7 md:p-10">
+              <h3 class="font-extrabold text-[20px]" style="font-family: Fredoka;">Reason x Logo — Why these colors &amp; shapes represent our reason</h3>
+              <p class="mt-3 text-[13px] leading-6 text-[#566080] font-medium">Our main element is cotton. We chose it because it represents our core: 100% cotton, soft, natural and hypoallergenic products for babies. The logo translates that into visuals.</p>
+              <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="rounded-[20px] border border-[#F9E1E8] overflow-hidden bg-[#FFF9F7]">
+                  <div class="p-4">
+                    <div class="flex gap-2">
+                      <div class="w-10 h-10 rounded-full grid place-items-center bg-white border border-[#F9E1E8] text-[16px]">🤍</div>
+                      <div class="flex-1">
+                        <div class="h-6 rounded-full" style="background: rgb(245, 230, 211);"></div>
+                        <div class="h-2 mt-1 rounded-full opacity-70" style="background: rgb(232, 213, 181);"></div>
+                      </div>
+                    </div>
+                    <p class="mt-3 font-extrabold text-[13px] leading-tight">Beige — Natural Cotton</p>
+                    <p class="text-[11px] leading-5 text-[#6B7390] mt-2 font-medium">Beige represents raw cotton fields, warm hug, unbleached softness. It signals natural, not processed. The color of the cotton flower before treatment.</p>
+                    <p class="text-[10px] font-bold mt-2 tracking-wide text-[#B5BBCD]">#F5E6D3</p>
+                  </div>
+                </div>
+                <div class="rounded-[20px] border border-[#F9E1E8] overflow-hidden bg-[#FFF9F7]">
+                  <div class="p-4">
+                    <div class="flex gap-2">
+                      <div class="w-10 h-10 rounded-full grid place-items-center bg-white border border-[#F9E1E8] text-[16px]">☁️</div>
+                      <div class="flex-1">
+                        <div class="h-6 rounded-full" style="background: rgb(127, 176, 105);"></div>
+                        <div class="h-2 mt-1 rounded-full opacity-70" style="background: rgb(168, 198, 134);"></div>
+                      </div>
+                    </div>
+                    <p class="mt-3 font-extrabold text-[13px] leading-tight">Green — Organic &amp; Pure</p>
+                    <p class="text-[11px] leading-5 text-[#6B7390] mt-2 font-medium">Green = life, eco, sustainability certifications, hypoallergenic. No aggressive chemicals. The leaf that protects the cotton plant. Health for baby &amp; planet.</p>
+                    <p class="text-[10px] font-bold mt-2 tracking-wide text-[#B5BBCD]">#7FB069</p>
+                  </div>
+                </div>
+                <div class="rounded-[20px] border border-[#F9E1E8] overflow-hidden bg-[#FFF9F7]">
+                  <div class="p-4">
+                    <div class="flex gap-2">
+                      <div class="w-10 h-10 rounded-full grid place-items-center bg-white border border-[#F9E1E8] text-[16px]">✦</div>
+                      <div class="flex-1">
+                        <div class="h-6 rounded-full" style="background: rgb(45, 45, 45);"></div>
+                        <div class="h-2 mt-1 rounded-full opacity-70" style="background: rgb(0, 0, 0);"></div>
+                      </div>
+                    </div>
+                    <p class="mt-3 font-extrabold text-[13px] leading-tight">Black — Contrast &amp; Trust</p>
+                    <p class="text-[11px] leading-5 text-[#6B7390] mt-2 font-medium">Black gives premium contrast, readability for parents. Makes beige and green pop. Professional S.A.S. company, not just craft. Clean, well-done finish.</p>
+                    <p class="text-[10px] font-bold mt-2 tracking-wide text-[#B5BBCD]">#2D2D2D</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 grid md:grid-cols-2 gap-4">
+                <div class="rounded-2xl bg-[#F9E1E8]/60 p-4 border border-[#F2C9D6]">
+                  <p class="text-[12px] font-extrabold uppercase tracking-widest">☁️ Cotton Flower Icon</p>
+                  <p class="text-[12px] leading-5 mt-2 text-[#6B4F5F] font-medium">Circular form mimics soft cotton puff. Rounded edges = safe for baby, no sharp points. Central icon suggests cloud / cotton ball = Soft as a Cloud, Safe as a Hug. Badge style works on labels, pajamas tags, packaging.</p>
+                </div>
+                <div class="rounded-2xl bg-[#3F4E73] text-white p-4">
+                  <p class="text-[12px] font-extrabold uppercase tracking-widest text-white/60">Simple, Clean, Well-Done</p>
+                  <p class="text-[12px] leading-5 mt-2 text-white/80 font-medium">Just like our clothes: no extra synthetic blends. The logo has only what is necessary. That minimalism reassures middle and upper-class parents who pay more for quality without chemicals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== RAZON (Reason) ===== -->
+      <section id="reason" class="max-w-[1220px] mx-auto px-5 lg:px-8 py-12 md:py-16">
+        <div class="grid md:grid-cols-[0.9fr_1.1fr] gap-8 md:gap-14 items-start">
+          <div class="md:sticky md:top-28">
+            <div class="inline-flex items-center gap-2 text-[11px] font-extrabold tracking-[0.18em] uppercase bg-[#F9E1E8] px-3 py-1.5 rounded-full">✓ Checklist #3 — Reason</div>
+            <h2 class="mt-4 text-[34px] md:text-[46px] font-extrabold leading-[0.95] tracking-tight" style="font-family: Fredoka;">Why <br> GoldyBaby <br> exists?</h2>
+            <p class="mt-5 text-[14px] leading-7 text-[#566080] font-medium">This company is aimed at children and babies. Many times, this part of society suffers from clothing that damages their skin because they are very sensitive. Our main concern is the health of every child who will use our creations.</p>
+            <div class="mt-7 bg-[#3F4E73] text-[#FFF9F7] rounded-[20px] p-5 relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-[#4A93CC]/20 rounded-full blur-2xl"></div>
+              <p class="relative text-[13px] leading-6 font-medium italic">“We want to make things easier for parents and provide a new method of innovation for the care of children's health, as well as medical-related benefits and facilities for the parents of these children.”</p>
+              <p class="relative mt-3 text-[11px] tracking-widest uppercase opacity-60 font-bold">— GoldyBaby Manifesto • Project Document</p>
+            </div>
+            <div class="mt-6 bg-white rounded-[20px] border border-[#F9E1E8] p-4">
+              <p class="text-[11px] font-extrabold uppercase tracking-widest text-[#4A93CC]">Target Market</p>
+              <p class="text-[13px] leading-5 mt-2 font-bold">Middle &amp; Upper-class families</p>
+              <p class="text-[12px] leading-5 text-[#6B7390] mt-1">Willing to pay more for safe, soft, chemical-free pajamas and baby clothes. Parents who worry about allergies, eczema, respiratory infections.</p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="bg-white rounded-[28px] border border-[#F9E1E8] p-6 md:p-8 shadow-[0_12px_40px_rgba(0,0,0,0.04)]">
+              <h3 class="font-extrabold text-[18px]" style="font-family: Fredoka;">The Problem: Sensitive Skin + Bad Clothing</h3>
+              <p class="mt-4 text-[14px] leading-7 text-[#3A4666] font-medium">Many times, we see babies and children with skin conditions and even respiratory infections caused by clothing that has not been properly treated, dyed with aggressive chemicals, or made with synthetic blends. For babies, whose skin is 5x thinner than adults, this is critical.<br><br>In Colombia, local cotton production is reducing and not enough to meet demand for high-quality hypoallergenic textiles. The industry needs external sourcing to maintain quality, volume and price stability. Parents end up paying more for imported finished garments that are still not guaranteed hypoallergenic.<br><br><span class="font-bold bg-[#F9E1E8] px-2 py-0.5 rounded-lg">Our solution:</span> GoldyBaby S.A.S. creates pajamas and baby clothes that are 100% cotton, soft, natural and hypoallergenic. Our main element is cotton — pure, organic, with quality controls without aggressive chemicals, with sustainability certifications.</p>
+              <div class="mt-7 grid sm:grid-cols-3 gap-4">
+                <div class="rounded-[20px] p-4 border border-[#F9E1E8] bg-[#FFF9F7] hover:bg-white hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all">
+                  <div class="w-9 h-9 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-[16px] shadow-sm"><svg class="algodon "><use href="#icono-algodon"/></svg></div>
+                  <h4 class="mt-3 font-extrabold text-[13px]" style="font-family: Fredoka;">100% Natural Cotton</h4>
+                  <p class="mt-1.5 text-[11px] leading-5 text-[#6B7390] font-medium">Pure cotton, no blends. Breathable, biodegradable. Reduces irritation.</p>
+                </div>
+                <div class="rounded-[20px] p-4 border border-[#F9E1E8] bg-[#FFF9F7] hover:bg-white hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all">
+                  <div class="w-9 h-9 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-[16px] shadow-sm">🫧</div>
+                  <h4 class="mt-3 font-extrabold text-[13px]" style="font-family: Fredoka;">Hypoallergenic &amp; Safe</h4>
+                  <p class="mt-1.5 text-[11px] leading-5 text-[#6B7390] font-medium">No harsh chemicals. Designed for eczema-prone, sensitive skin, respiratory-safe.</p>
+                </div>
+                <div class="rounded-[20px] p-4 border border-[#F9E1E8] bg-[#FFF9F7] hover:bg-white hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all">
+                  <div class="w-9 h-9 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-[16px] shadow-sm">☁️</div>
+                  <h4 class="mt-3 font-extrabold text-[13px]" style="font-family: Fredoka;">Soft &amp; Organic Certified</h4>
+                  <p class="mt-1.5 text-[11px] leading-5 text-[#6B7390] font-medium">Cloud-like softness. Brazilian suppliers with sustainability &amp; quality certs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="rounded-[24px] bg-[#F9E1E8] p-5 flex gap-4 items-start border border-[#F2C9D6]">
+                <div class="w-10 h-10 rounded-full bg-white grid place-items-center text-lg shrink-0">🌸</div>
+                <div>
+                  <h4 class="font-extrabold text-[14px]">For Delicate Skin</h4>
+                  <p class="text-[12px] leading-5 mt-1 text-[#6B4F5F] font-medium">Hypoallergenic material reduces irritation, allergies and respiratory issues caused by synthetic fabrics and poor dyeing processes.</p>
+                </div>
+              </div>
+              <div class="rounded-[24px] bg-[#B7DCF4] text-white p-5 flex gap-4 items-start">
+                <div class="w-10 h-10 rounded-full bg-white/90 grid place-items-center text-lg shrink-0">☁️</div>
+                <div>
+                  <h4 class="font-extrabold text-white text-[14px]">For Parents Peace of Mind</h4>
+                  <p class="text-[12px] leading-5 mt-1 text-white/90 font-medium">Medical-related benefits: less doctor visits for skin rashes, better sleep for babies in soft pajamas, trust for parents who want the best.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#4A93CC]/10 rounded-[20px] p-5 border border-[#4A93CC]/20">
+              <p class="text-[12px] font-extrabold uppercase tracking-widest text-[#4A93CC]">Colombia Context — Why Import?</p>
+              <p class="text-[13px] leading-6 mt-2 font-medium text-[#3A4666]">Cotton production in Colombia has decreased significantly over the last decade. Not enough volume, inconsistent quality, higher costs. To produce hypoallergenic clothing at scale with stable supply, we must look to Brazil — world's second largest exporter, with proximity that reduces logistics costs and delivery times, plus organic and sustainability certifications that match GoldyBaby values.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== OBJETIVOS ===== -->
+      <section id="objectives" class="relative overflow-hidden">
+        <div class="bg-[#4A93CC] relative obj-fondo">
+          <div class="absolute inset-0 opacity-[0.08]" style="background-image: radial-gradient(circle at 2px 2px, white 2px, transparent 0px); background-size: 24px 24px;"></div>
+          <div class="relative max-w-[1220px] mx-auto px-5 lg:px-8 py-14 md:py-20">
+            <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
+              <div>
+                <div class="inline-flex bg-white/15 backdrop-blur text-white border border-white/20 rounded-full px-3 py-1.5 text-[11px] font-extrabold tracking-widest uppercase obj-etiqueta">✓ Checklist #2 — Objective(s) • Academic Project</div>
+                <h2 class="mt-4 text-white obj-titulo text-[32px] md:text-[46px] font-extrabold leading-[0.95] tracking-tight" style="font-family: Fredoka;">Project <br> Objectives</h2>
+              </div>
+              <p class="text-white/85 obj-texto max-w-[420px] text-[13px] leading-6 font-medium">A strategic import plan to ensure stable, sustainable, cost-effective supply of Brazilian cotton for GoldyBaby’s hypoallergenic production. Based on project document details + ACE-72 research.</p>
+            </div>
+            <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-6">
+              <div class="bg-[#3F4E73] rounded-[28px] p-7 md:p-8 text-[#FFF9F7] relative overflow-hidden">
+                <div class="absolute -right-16 -top-16 w-64 h-64 bg-[#4A93CC] rounded-full blur-[40px] opacity-40"></div>
+                <div class="relative">
+                  <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 text-[11px] font-bold tracking-widest uppercase">General Objective — English</div>
+                  <p class="mt-5 text-[18px] md:text-[21px] leading-7 font-bold">Design an import plan for cotton from Brazil to ensure a stable supply for GoldyBaby S.A.S.'s hypoallergenic children's clothing production.</p>
+                  <p class="mt-4 text-[13px] leading-6 text-white/70 font-medium">This plan covers commercial analysis, tariff analysis under ACE-72 (0% vs 40% normal), logistics mapping, legal framework since 1810 independence, 1831 Gran Colombia, 1886 Constitution, 1991 modern Constitution that opened foreign trade, creating DIAN, MinCIT, VUCE. Focus on sustainable, certified, chemical-free cotton for middle/upper-class families.</p>
+                  <div class="mt-6 flex items-center gap-3 text-sm"><img alt="" class="w-8 h-8 rounded-full bg-white p-1" src="img/logo.png"><span class="text-white/60 text-[11px] font-bold tracking-wide uppercase">GoldyBaby S.A.S. • Brazil 🇧🇷 → Colombia 🇨🇴 • 31-08-26</span></div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-[#FFF9F7] rounded-[22px] p-5 border border-white/50 shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+                  <div class="flex items-center justify-between"><span class="w-8 h-8 rounded-full bg-[#3F4E73] text-white grid place-items-center text-[11px] font-extrabold">01</span><span class="text-[18px]">📊</span></div>
+                  <h4 class="mt-3 font-extrabold text-[13px] leading-tight">Analyze Brazil’s cotton industry</h4>
+                  <p class="mt-2 text-[11px] leading-5 text-[#566080] font-medium">Study production volumes (2nd largest exporter), quality standards, sustainability certs, chemical-free processing, and Colombia-Brazil trade regulations. Identify key producing regions: Mato Grosso, Bahia.</p>
+                </div>
+                <div class="bg-[#FFF9F7] rounded-[22px] p-5 border border-white/50 shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+                  <div class="flex items-center justify-between"><span class="w-8 h-8 rounded-full bg-[#3F4E73] text-white grid place-items-center text-[11px] font-extrabold">02</span><span class="text-[18px]">📦</span></div>
+                  <h4 class="mt-3 font-extrabold text-[13px] leading-tight">Identify ACE-72 advantages</h4>
+                  <p class="mt-2 text-[11px] leading-5 text-[#566080] font-medium">Tariff: 0% under ACE-72 vs normal 40% (ProColombia 2024). Logistics: proximity reduces cost &amp; time. Customs: simplified DIAN + VUCE procedures with certificate of origin.</p>
+                </div>
+                <div class="bg-[#FFF9F7] rounded-[22px] p-5 border border-white/50 shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+                  <div class="flex items-center justify-between"><span class="w-8 h-8 rounded-full bg-[#3F4E73] text-white grid place-items-center text-[11px] font-extrabold">03</span><span class="text-[18px]">🧸</span></div>
+                  <h4 class="mt-3 font-extrabold text-[13px] leading-tight">Propose sustainable import model</h4>
+                  <p class="mt-2 text-[11px] leading-5 text-[#566080] font-medium">Practical, cost-effective, eco-friendly import chain for GoldyBaby. From supplier selection in Brazil, transport doc, packing list, to final DIAN import declaration. For pajamas &amp; baby clothes.</p>
+                </div>
+                <div class="bg-[#FFF9F7] rounded-[22px] p-5 border border-white/50 shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+                  <div class="flex items-center justify-between"><span class="w-8 h-8 rounded-full bg-[#3F4E73] text-white grid place-items-center text-[11px] font-extrabold">04</span><span class="text-[18px]">⚖️</span></div>
+                  <h4 class="mt-3 font-extrabold text-[13px] leading-tight">Historical &amp; legal background</h4>
+                  <p class="mt-2 text-[11px] leading-5 text-[#566080] font-medium">Understand trade agreements history: Colombia independence 1810, Gran Colombia 1831, Constitution 1886, 1991 opening to foreign trade. Creation of DIAN, MinCIT, VUCE. Brazil similar evolution. Legal compliance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== POR QUE BRASIL ===== -->
+      <section id="brazil" class="max-w-[1220px] mx-auto px-5 lg:px-8 py-14 md:py-20">
+        <div class="text-center max-w-[720px] mx-auto">
+          <div class="inline-flex bg-[#F9E1E8] rounded-full px-3 py-1 text-[11px] font-extrabold tracking-widest uppercase">Commercial Analysis — From Project Doc</div>
+          <h2 class="mt-4 text-[32px] md:text-[46px] font-extrabold leading-[0.9] tracking-tight" style="font-family: Fredoka;">Why <span class="text-[#4A93CC]">Brazil</span> for GoldyBaby?</h2>
+          <p class="mt-4 text-[14px] leading-6 text-[#6B7390] font-medium">Colombia cotton not enough, production reducing. Brazil is world’s 2nd largest exporter. Proximity = lower logistics costs &amp; faster delivery. Sustainability certifications + quality controls without aggressive chemicals. Plus ACE-72 0% tariff benefit (ProColombia 2024).</p>
+        </div>
+        <div class="mt-10 grid lg:grid-cols-[1.1fr_0.9fr] gap-6">
+          <div class="bg-white rounded-[28px] border border-[#F9E1E8] shadow-[0_12px_40px_rgba(0,0,0,0.04)] overflow-hidden">
+            <div class="px-6 py-4 bg-[#3F4E73] text-white flex items-center justify-between"><span class="text-[12px] font-extrabold tracking-widest uppercase">Supplier Comparison — Brazil vs USA vs Australia</span><span class="text-[10px] bg-[#4A93CC] px-2 py-1 rounded-full font-bold">RECOMMENDED: BRAZIL</span></div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-[12px]">
+                <thead class="bg-[#FFF9F7] text-[11px] uppercase tracking-widest font-extrabold">
+                  <tr>
+                    <th class="text-left p-3 px-5">Factor</th>
+                    <th class="text-left p-3">🇧🇷 Brazil</th>
+                    <th class="text-left p-3">🇺🇸 USA</th>
+                    <th class="text-left p-3">🇦🇺 Australia</th>
+                  </tr>
+                </thead>
+                <tbody class="font-medium">
+                  <tr class="border-t border-[#F9E1E8] bg-[#B7DCF4]/15">
+                    <td class="p-3 px-5 font-bold">Proximity to Colombia</td>
+                    <td class="p-3 font-bold text-[#3F4E73]">Excellent — neighbor, short transit</td>
+                    <td class="p-3 text-[#8E96AE]">Far — higher freight</td>
+                    <td class="p-3 text-[#8E96AE]">Very far — 20+ days</td>
+                  </tr>
+                  <tr class="border-t border-[#F9E1E8]">
+                    <td class="p-3 px-5 font-bold">Logistics cost / time</td>
+                    <td class="p-3 font-bold">Low cost, fast delivery</td>
+                    <td class="p-3">High cost, customs complex</td>
+                    <td class="p-3">Very high, port delays</td>
+                  </tr>
+                  <tr class="border-t border-[#F9E1E8] bg-[#FFF9F7]">
+                    <td class="p-3 px-5 font-bold">Tariff under ACE-72</td>
+                    <td class="p-3 font-extrabold text-[#4A93CC]">0% tariff (ProColombia 2024)</td>
+                    <td class="p-3">No ACE-72 — up to 40%</td>
+                    <td class="p-3">No agreement — 40%</td>
+                  </tr>
+                  <tr class="border-t border-[#F9E1E8]">
+                    <td class="p-3 px-5 font-bold">Sustainability certs</td>
+                    <td class="p-3">ABR, BCI, organic options</td>
+                    <td class="p-3">Limited organic</td>
+                    <td class="p-3">Good but expensive</td>
+                  </tr>
+                  <tr class="border-t border-[#F9E1E8] bg-[#FFF9F7]">
+                    <td class="p-3 px-5 font-bold">Chemical-free quality</td>
+                    <td class="p-3 font-bold">Quality controls without aggressive chemicals — ideal for baby</td>
+                    <td class="p-3">GMO heavy, chemical</td>
+                    <td class="p-3">Good quality, high price</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="px-6 py-3 bg-[#FFF9F7] border-t border-[#F9E1E8] text-[11px] font-semibold text-[#8E96AE]">Source: ProColombia 2024 • ACE-72 Agreement • DIAN • Project document research • Brazil is 2nd largest exporter globally.</div>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-[#3F4E73] rounded-[24px] p-6 text-white">
+              <p class="text-[11px] font-extrabold uppercase tracking-widest text-white/50">ACE-72 Big Win</p>
+              <h3 class="mt-2 text-[22px] font-extrabold leading-tight" style="font-family: Fredoka;">0% vs 40% tariff difference = huge saving for GoldyBaby</h3>
+              <p class="mt-3 text-[13px] leading-6 text-white/70 font-medium">Under ACE-72 (Economic Complementation Agreement between Colombia, Ecuador, Venezuela and MERCOSUR), cotton from Brazil enters at 0% tariff with proper Certificate of Origin. Without agreement, general tariff is up to 40%. For a startup making pajamas for sensitive skin, this saving allows competitive pricing while keeping quality.</p>
+              <div class="mt-4 inline-flex bg-[#4A93CC] rounded-full px-3 py-1.5 text-[11px] font-bold">💡 Citation: ProColombia 2024 — ACE-72 benefits</div>
+            </div>
+            <div class="bg-white rounded-[24px] p-5 border border-[#F9E1E8]">
+              <p class="text-[11px] font-extrabold uppercase tracking-widest text-[#4A93CC]">Legal &amp; Historical Note</p>
+              <p class="text-[12px] leading-6 mt-2 font-medium text-[#4A5575]">Colombia after independence 1810, Gran Colombia 1831, Constitution 1886 centralizing state, then modern Constitution 1991 opened foreign trade, created DIAN (tax &amp; customs), MinCIT (Commerce Ministry), VUCE (single window). Brazil similar trade opening. This framework enables GoldyBaby import today. Understanding this history justifies why ACE-72 exists and why DIAN/VUCE procedures matter.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== LINEA DE TIEMPO DEL NEGOCIO ===== -->
+      <section id="business-timeline" class="seccion seccion--tiempo">
+        <div class="contenedor">
+          <header class="seccion__cabecera">
+            <span class="etiqueta"><svg class="algodon"><use href="#icono-algodon"/></svg> Business Timeline</span>
+            <h3 class="seccion__titulo">From the first idea to growth</h3>
+            <p class="seccion__texto">Every step GoldyBaby has taken, from the idea in 2024 to the plans for 2026, including the capital that makes the first production possible.</p>
+          </header>
+
+          <ol class="linea-tiempo">
+            <li class="paso" style="--c:#BFDFF6; --c2:#7DB6E0;">
+              <div class="paso__tarjeta"><span class="paso__num">1</span><h4>Beginning</h4><span class="paso__icono" aria-hidden="true">💡</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">January 2024</p>
+              <p class="paso__texto">The idea of creating Goldy Baby arises, a company dedicated to manufacturing baby clothing. The project is born with the purpose of offering comfortable, soft garments made with hypoallergenic cotton, with the care of little ones' skin in mind.</p>
+            </li>
+            <li class="paso" style="--c:#C9EAF7; --c2:#86C8E6;">
+              <div class="paso__tarjeta"><span class="paso__num">2</span><h4>Project</h4><span class="paso__icono" aria-hidden="true">📋</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">March 2024</p>
+              <p class="paso__texto">Goldy Baby begins to be structured as a business project, defining its objectives, its target audience, and the products it will offer. The company focuses on manufacturing good-quality children's clothing, using materials suitable for babies' sensitive skin.</p>
+            </li>
+            <li class="paso" style="--c:#DCD3F4; --c2:#B3A3E3;">
+              <div class="paso__tarjeta"><span class="paso__num">3</span><h4>Research</h4><span class="paso__icono" aria-hidden="true">🔍</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">June 2024</p>
+              <p class="paso__texto">A market study of children's clothing is conducted to learn about parents' needs and the characteristics of the products they are looking for. Opportunities are also identified to offer hypoallergenic cotton garments that are comfortable, soft, and durable.</p>
+            </li>
+            <li class="paso paso--capital" style="--c:#FBE5A0; --c2:#EBC55C;">
+              <div class="paso__tarjeta"><span class="paso__num">4</span><h4>Capital</h4><span class="paso__icono" aria-hidden="true">🏦</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">August 2024</p>
+              <p class="paso__texto">GoldyBaby obtains COP 30,000,000 from Bancolombia as starting capital (simulated for the university project). The loan is later repaid with advertising and sales.</p>
+              <button type="button" class="btn-suave" data-documento="doc-loan-support">Loan support →</button>
+            </li>
+            <li class="paso" style="--c:#FFD7C2; --c2:#F2AE8D;">
+              <div class="paso__tarjeta"><span class="paso__num">5</span><h4>Production</h4><span class="paso__icono" aria-hidden="true">🧵</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">September 2024</p>
+              <p class="paso__texto">Goldy Baby begins looking for suppliers that offer good-quality cotton for manufacturing its garments. Brazil is considered an option for importing the raw material, due to its textile production and the possibility of obtaining cotton at competitive prices.</p>
+            </li>
+            <li class="paso" style="--c:#F9D0E0; --c2:#EE9FBF;">
+              <div class="paso__tarjeta"><span class="paso__num">6</span><h4>Distribution</h4><span class="paso__icono" aria-hidden="true">📦</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">January 2025</p>
+              <p class="paso__texto">The design and production process of Goldy Baby's first garments begins. The brand focuses on creating baby clothing that combines comfort, quality, and attractive designs, using hypoallergenic cotton as the main raw material.</p>
+            </li>
+            <li class="paso" style="--c:#D5DBF7; --c2:#9FAAE6;">
+              <div class="paso__tarjeta"><span class="paso__num">7</span><h4>Growth</h4><span class="paso__icono" aria-hidden="true">📈</span></div>
+              <div class="paso__nodo"></div>
+              <p class="paso__fecha">January 2026</p>
+              <p class="paso__texto">Goldy Baby plans new strategies to strengthen its presence in the Colombian market. Its objectives include expanding the product catalog, gaining new customers, improving its production processes, and exploring future growth opportunities.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== CAPITAL ===== -->
+      <section id="capital" class="seccion seccion--capital">
+        <div class="contenedor">
+          <header class="seccion__cabecera">
+            <span class="etiqueta"><svg class="algodon"><use href="#icono-algodon"/></svg> Capital &amp; Financing — Project Doc</span>
+            <h3 class="seccion__titulo">Starting capital: COP 30,000,000</h3>
+            <p class="seccion__texto">GoldyBaby S.A.S. starts with a single source of funds: a bank loan from Bancolombia. We then recover the money with advertising and sales, including home delivery for customers who are far from our first store.</p>
+          </header>
+
+          <div class="capital__grid">
+            <article class="tarjeta-fondos">
+              <p class="tarjeta-fondos__rotulo">Source of funds</p>
+              <h4 class="tarjeta-fondos__banco">Bancolombia</h4>
+              <p class="tarjeta-fondos__monto">COP 30,000,000</p>
+              <p class="tarjeta-fondos__tipo">Bank loan • Starting capital</p>
+              <dl class="datos">
+                <div><dt>Lender</dt><dd>Bancolombia</dd></div>
+                <div><dt>Amount</dt><dd>30 million pesos</dd></div>
+                <div><dt>Status</dt><dd>Approved &amp; disbursed*</dd></div>
+                <div><dt>Repaid with</dt><dd>Advertising + sales</dd></div>
+              </dl>
+              <button type="button" class="btn-principal" data-documento="doc-loan-support">View loan support →</button>
+            </article>
+
+            <article class="tarjeta-recupera">
+              <p class="tarjeta-fondos__rotulo">How we recover the money</p>
+              <ol class="recupera">
+                <li>
+                  <span class="recupera__icono" aria-hidden="true">📣</span>
+                  <div><h5>1. Advertising</h5><p>We invest in ads to make GoldyBaby known to parents who want safe, soft, hypoallergenic clothes for their babies.</p></div>
+                </li>
+                <li>
+                  <span class="recupera__icono" aria-hidden="true">🚚</span>
+                  <div><h5>2. Sales + home delivery</h5><p>We ship orders to people who are not near our first store, so they can buy everything they need more easily.</p></div>
+                </li>
+                <li>
+                  <span class="recupera__icono" aria-hidden="true">✅</span>
+                  <div><h5>3. Loan repaid</h5><p>The income from ads-driven sales and deliveries pays back the full 30 million pesos to Bancolombia.</p></div>
+                </li>
+              </ol>
+            </article>
+          </div>
+          <p class="aviso">* Simulated financing for a university project (ECCI 2026). No real loan was requested.</p>
+        </div>
+      </section>
+
+      <!-- ===== DOCUMENTOS DE IMPORTACION ===== -->
+      <section id="imports" class="max-w-[1220px] mx-auto px-5 lg:px-8 pb-10">
+        <div class="rounded-[32px] bg-white border border-[#F9E1E8] shadow-[0_12px_40px_rgba(0,0,0,0.04)] p-7 md:p-10">
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+            <div>
+              <div class="inline-flex bg-[#3F4E73] text-white rounded-full px-3 py-1 text-[11px] font-extrabold tracking-widest uppercase">Import Requirements — Project Doc</div>
+              <h3 class="mt-3 text-[28px] md:text-[36px] font-extrabold leading-[0.95] tracking-tight" style="font-family: Fredoka;">What you need to <br> import from Brazil</h3>
+            </div>
+            <p class="max-w-[380px] text-[13px] leading-6 text-[#6B7390] font-medium">Legal compliance for GoldyBaby: DIAN, VUCE, MinCIT. All documents required for ACE-72 0% tariff and smooth customs clearance for cotton.</p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="rounded-[20px] bg-[#FFF9F7] border border-[#F9E1E8] p-5">
+              <div class="flex items-start justify-between"><div class="w-10 h-10 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-lg">🧾</div><span class="text-[9px] font-extrabold tracking-widest uppercase bg-[#3F4E73] text-white px-2.5 py-1 rounded-full">Required</span></div>
+              <h4 class="mt-4 font-extrabold text-[14px]">Commercial Invoice</h4>
+              <p class="mt-1.5 text-[12px] leading-5 text-[#6B7390] font-medium">Detailed invoice from Brazilian supplier with cotton specs, quantity, value, Incoterms.</p>
+              <button type="button" class="btn-documento" data-documento="doc-commercial-invoice">View document →</button>
+            </div>
+            <div class="rounded-[20px] bg-[#FFF9F7] border border-[#F9E1E8] p-5">
+              <div class="flex items-start justify-between"><div class="w-10 h-10 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-lg">📦</div><span class="text-[9px] font-extrabold tracking-widest uppercase bg-[#3F4E73] text-white px-2.5 py-1 rounded-full">Required</span></div>
+              <h4 class="mt-4 font-extrabold text-[14px]">Packing List</h4>
+              <p class="mt-1.5 text-[12px] leading-5 text-[#6B7390] font-medium">Exact breakdown of bales, weight, dimensions. For DIAN inspection and logistics.</p>
+              <button type="button" class="btn-documento" data-documento="doc-packing-list">View document →</button>
+            </div>
+            <div class="rounded-[20px] bg-[#FFF9F7] border border-[#F9E1E8] p-5">
+              <div class="flex items-start justify-between"><div class="w-10 h-10 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-lg">📜</div><span class="text-[9px] font-extrabold tracking-widest uppercase bg-[#3F4E73] text-white px-2.5 py-1 rounded-full">ACE-72 0%</span></div>
+              <h4 class="mt-4 font-extrabold text-[14px]">Certificate of Origin</h4>
+              <p class="mt-1.5 text-[12px] leading-5 text-[#6B7390] font-medium">Proves cotton is Brazilian. Essential for ACE-72 0% tariff vs 40% normal. Issued by authorized entity.</p>
+              <button type="button" class="btn-documento" data-documento="doc-certificate-origin">View document →</button>
+            </div>
+            <div class="rounded-[20px] bg-[#FFF9F7] border border-[#F9E1E8] p-5">
+              <div class="flex items-start justify-between"><div class="w-10 h-10 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-lg">🚢</div><span class="text-[9px] font-extrabold tracking-widest uppercase bg-[#3F4E73] text-white px-2.5 py-1 rounded-full">Logistics</span></div>
+              <h4 class="mt-4 font-extrabold text-[14px]">Transport Document</h4>
+              <p class="mt-1.5 text-[12px] leading-5 text-[#6B7390] font-medium">Bill of Lading (maritime) or AWB. Shows route Brazil → Colombia, freight details.</p>
+              <button type="button" class="btn-documento" data-documento="doc-transport-document">View document →</button>
+            </div>
+            <div class="rounded-[20px] bg-[#FFF9F7] border border-[#F9E1E8] p-5">
+              <div class="flex items-start justify-between"><div class="w-10 h-10 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-lg">📋</div><span class="text-[9px] font-extrabold tracking-widest uppercase bg-[#3F4E73] text-white px-2.5 py-1 rounded-full">DIAN / VUCE</span></div>
+              <h4 class="mt-4 font-extrabold text-[14px]">Import Declaration</h4>
+              <p class="mt-1.5 text-[12px] leading-5 text-[#6B7390] font-medium">Import Declaration via VUCE + DIAN system. Declares value, tariff classification (cotton HS code).</p>
+              <button type="button" class="btn-documento" data-documento="doc-import-declaration">View document →</button>
+            </div>
+            <div class="rounded-[20px] bg-[#FFF9F7] border border-[#F9E1E8] p-5">
+              <div class="flex items-start justify-between"><div class="w-10 h-10 rounded-full bg-white border border-[#F9E1E8] grid place-items-center text-lg">🏛️</div><span class="text-[9px] font-extrabold tracking-widest uppercase bg-[#3F4E73] text-white px-2.5 py-1 rounded-full">Gov</span></div>
+              <h4 class="mt-4 font-extrabold text-[14px]">DIAN &amp; VUCE Procedures</h4>
+              <p class="mt-1.5 text-[12px] leading-5 text-[#6B7390] font-medium">DIAN handles taxes &amp; customs. VUCE is single window for permits. Also MinCIT registration. Without this, no legal import.</p>
+              <button type="button" class="btn-documento" data-documento="doc-dian-vuce">View document →</button>
+            </div>
+          </div>
+          <div class="mt-8 grid md:grid-cols-2 gap-4">
+            <div class="rounded-[20px] bg-[#4A93CC] text-white p-5">
+              <p class="text-[11px] font-extrabold uppercase tracking-widest text-white/70">Historical Legal Framework</p>
+              <p class="mt-2 text-[13px] leading-6 font-medium">Colombia 1810 independence → Gran Colombia 1831 → Constitution 1886 → 1991 Constitution opened foreign trade → Creation of DIAN, MinCIT, VUCE. This evolution created modern import law. GoldyBaby must comply with this framework. Brazil has similar MERCOSUR integration that led to ACE-72.</p>
+            </div>
+            <div class="rounded-[20px] bg-[#F9E1E8] p-5 border border-[#F2C9D6]">
+              <p class="text-[11px] font-extrabold uppercase tracking-widest text-[#9A7F8C]">For Parents &amp; Quality</p>
+              <p class="mt-2 text-[13px] leading-6 font-medium text-[#6B4F5F]">All these docs guarantee traceability: we know exactly where cotton comes from, how it was grown without aggressive chemicals, sustainability certs (ABR, BCI). That traceability = trust for middle/upper-class families paying more for hypoallergenic pajamas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="franja-algodon" aria-hidden="true"></div>
+      <!-- ===== PIE DE PAGINA ===== -->
+      <footer class="mt-6 bg-[#3F4E73] text-[#FFF9F7] rounded-t-[32px] overflow-hidden">
+        <div class="max-w-[1220px] mx-auto px-5 lg:px-8 py-12 md:py-16">
+          <div class="grid md:grid-cols-[1.2fr_1fr] gap-10">
+            <div>
+              <div class="flex items-center gap-3"><img alt="GoldyBaby" class="w-10 h-10 rounded-full bg-white p-1" src="img/logo.png"><span class="font-extrabold text-[20px]" style="font-family: Fredoka;">GoldyBaby S.A.S.</span></div>
+              <p class="mt-4 text-[14px] leading-6 text-white/70 max-w-[460px] font-medium">100% hypoallergenic cotton pajamas and baby clothes for sensitive skin. Colombian company targeting middle &amp; upper-class families. Sustainable import model from Brazil under ACE-72 0% tariff. University project — Not a real store.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="bg-white/10 border border-white/10 rounded-full px-3 py-1.5 text-[11px] font-bold">🇧🇷 Brazil Cotton • 2nd Exporter</span><span class="bg-[#4A93CC] rounded-full px-3 py-1.5 text-[11px] font-bold">🇨🇴 31-08-26 Founded • ECCI</span></div>
+            </div>
+            <div class="grid grid-cols-2 gap-8 text-sm pie-columnas">
+              <div>
+                <p class="text-[11px] font-extrabold tracking-[0.18em] uppercase text-white/40">Navigation</p>
+                <div class="mt-4 flex flex-col gap-2 font-semibold text-white/80 text-[13px]">
+                  <button class="text-left hover:text-white" data-destino="logo-meaning" type="button">Logo &amp; Reason x Logo</button>
+                  <button class="text-left hover:text-white" data-destino="reason" type="button">Reason</button>
+                  <button class="text-left hover:text-white" data-destino="objectives" type="button">Objectives</button>
+                  <button class="text-left hover:text-white" data-destino="brazil" type="button">Why Brazil?</button>
+                  <button class="text-left hover:text-white" data-destino="capital" type="button">Capital</button>
+                  <button class="text-left hover:text-white" data-destino="imports" type="button">Import Docs</button>
+                </div>
+              </div>
+              <div>
+                <p class="text-[11px] font-extrabold tracking-[0.18em] uppercase text-white/40">Project Info</p>
+                <div class="mt-4 space-y-2 text-white/60 text-[12px] leading-5 font-medium">
+                  <p>ECCI University<br>Foreign Trade Technology</p>
+                  <p>Bogotá, Colombia</p>
+                  <p class="text-white/80 font-bold">31-08-26 Monday — Founding Day</p>
+                  <p class="inline-flex bg-white/10 rounded-full px-2.5 py-1 text-[10px] font-bold tracking-wide uppercase">University Project 2026</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 pt-8 border-t border-white/10">
+            <div class="grid md:grid-cols-[1.2fr_0.8fr] gap-8">
+              <div>
+                <p class="text-[11px] font-extrabold tracking-[0.18em] uppercase text-white/40 mb-3">Bibliography &amp; Sources</p>
+                <ul class="text-[11px] leading-6 text-white/60 font-medium list-disc pl-4 space-y-1">
+                  <li>ProColombia (2024). Benefits of ACE-72 Agreement — 0% tariff vs 40% general tariff for cotton from Brazil.</li>
+                  <li>DIAN — Tax and Customs Authority — Import declaration &amp; customs procedures Colombia.</li>
+                  <li>VUCE — Single Window for Foreign Trade — Single window for import permits, MinCIT registration.</li>
+                  <li>ACE-72 — Economic Complementation Agreement Colombia, Ecuador, Venezuela – MERCOSUR (Brazil).</li>
+                  <li>Brazilian Association of Cotton Producers — ABR, BCI certifications, sustainability standards.</li>
+                  <li>Political Constitution of Colombia 1991 — Opening to foreign trade, creation of modern trade institutions.</li>
+                  <li>GoldyBaby S.A.S. internal project document — Project justification, reason, objectives, market analysis.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-[11px] font-extrabold tracking-[0.18em] uppercase text-white/40 mb-3">Team &amp; Credits</p>
+                <div class="text-[12px] leading-6 text-white/70 font-medium">
+                  <p class="font-bold text-white/90">GoldyBaby S.A.S. Project Team — ECCI University 2026:</p>
+                  <ul class="mt-2 list-disc pl-4 space-y-0.5 text-white/60">
+                    <li>Maria Fernanda Alvarado Gonzales</li>
+                    <li>Juan Felipe Rivera Malagon</li>
+                    <li>Nicolas Pinzón Yanguma</li>
+                    <li>Rusbel Esteban Cepeda Garzón</li>
+                  </ul>
+                  <p class="mt-4 text-[11px] leading-5 text-white/50">Website developed for GoldyBaby S.A.S. university project — ECCI University 2026 — Foreign Trade Technology.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 pt-8 border-t border-white/10 flex flex-col md:flex-row gap-3 justify-between items-start md:items-center">
+            <p class="text-[11px] text-white/40 font-semibold tracking-wide">© 2026 GoldyBaby S.A.S. • ECCI University • 100% Hypoallergenic Cotton • 31-08-26 Founding Day • Not a real store</p>
+            <p class="text-[11px] text-white/40 font-bold tracking-widest uppercase">Soft as a Cloud, Safe as a Hug ☁️ • 31-08-26 Monday</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Ventana emergente reutilizable: se llena con el contenido de un <template> -->
+  <div id="modalDocumento" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" aria-hidden="true">
+    <div class="modal__fondo" data-cerrar-modal></div>
+    <div class="modal__caja pergamino" tabindex="-1">
+      <div class="pergamino__vara" aria-hidden="true"></div>
+      <div class="pergamino__hoja">
+        <div class="modal__barra">
+          <span id="modalTitulo" class="modal__titulo">Document</span>
+          <button type="button" class="modal__cerrar" data-cerrar-modal aria-label="Close document">✕</button>
+        </div>
+        <div id="modalContenido" class="modal__contenido"></div>
+        <div class="pergamino__pie">
+          <img src="img/logo.png" alt="GoldyBaby S.A.S.">
+          <div><strong>Goldy<span>Baby</span> S.A.S.</strong><small>100% hypoallergenic cotton · ECCI 2026</small></div>
+        </div>
+      </div>
+      <div class="pergamino__vara" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- ===== DOCUMENTOS (ejemplos simulados) ===== -->
+  <template id="doc-commercial-invoice" data-titulo="Commercial Invoice">
+    <article class="doc">
+      <div class="doc__sello">Sample document — academic exercise</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">COMMERCIAL INVOICE</h2><p class="doc__sub">Cotton fibre &amp; inputs import — Brazil → Colombia (ACE-72)</p></div>
+        <dl class="doc__meta">
+          <div><dt>Invoice No.</dt><dd>CI-2026-001</dd></div>
+          <div><dt>Date</dt><dd>Sample</dd></div>
+          <div><dt>Currency</dt><dd>USD</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__partes">
+        <section><h3>Exporter / Seller</h3><p><strong>Algodoeira Brasil Ltda.</strong><br>Mato Grosso, Brazil<br>Active in Siscomex · authorized to issue the MERCOSUR Certificate of Origin<br><em>(sample supplier)</em></p></section>
+        <section><h3>Importer / Buyer</h3><p><strong>GoldyBaby S.A.S.</strong><br>Bogotá, Colombia<br>Hypoallergenic baby wear<br>Registered importer in VUCE</p></section>
+      </div>
+
+      <div class="doc__condiciones">
+        <p><span>Incoterm</span> FOB Santos, Brazil</p>
+        <p><span>Origin</span> Brazil — ACE-72 (0% tariff)</p>
+        <p><span>Payment</span> Bank transfer, 30 days</p>
+        <p><span>Transport</span> Maritime — B/L</p>
+        <p><span>Port of entry</span> Cartagena, Colombia</p>
+        <p><span>Related docs</span> PL-2026-001 · CO-2026-001</p>
+      </div>
+
+      <div class="doc__tabla">
+        <table>
+          <thead><tr><th>Description of goods</th><th>Tariff code (10 digits)</th><th>Quantity</th><th>Unit price</th><th>Total</th></tr></thead>
+          <tbody>
+            <tr><td>Cotton fibre, 100% cotton, not carded or combed, fibre length ≥ 28.58 mm (long fibre). Sustainability certified (ABR / BCI).</td><td>5201.00.00.30</td><td>4,340 kg<br>(20 bales)</td><td>USD 1.75 / kg</td><td>USD 7,595.00</td></tr>
+            <tr><td>Sewing thread for garment making.</td><td>5401.10.10.00</td><td>1,440 kg<br>(120 cartons)</td><td>USD 4.20 / kg</td><td>USD 6,048.00</td></tr>
+            <tr><td>Plastic buttons for baby garments.</td><td>9606.10.00.00</td><td>750 kg<br>(30 cartons)</td><td>USD 3.00 / kg</td><td>USD 2,250.00</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="4">Total FOB value</td><td>USD 15,893.00</td></tr></tfoot>
+        </table>
+      </div>
+
+      <p class="doc__nota">We declare that the goods are of Brazilian origin, grown and processed in Brazil, and that the information in this invoice is true and correct. This invoice travels with the Packing List PL-2026-001, the MERCOSUR Certificate of Origin and the Transport Document (B/L), which GoldyBaby S.A.S. needs to file the import declaration with DIAN and VUCE. Quantities and prices are sample values for the academic exercise.</p>
+      <div class="doc__firma"><span></span><p>Authorized signature — sample</p></div>
+    </article>
+  </template>
+
+  <template id="doc-packing-list" data-titulo="Packing List">
+    <article class="doc">
+      <div class="doc__sello">Sample document — academic exercise</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">PACKING LIST</h2><p class="doc__sub">Cotton fibre &amp; inputs import — Brazil → Colombia (ACE-72)</p></div>
+        <dl class="doc__meta">
+          <div><dt>Packing List No.</dt><dd>PL-2026-001</dd></div>
+          <div><dt>Invoice ref.</dt><dd>CI-2026-001</dd></div>
+          <div><dt>Date</dt><dd>Sample</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__partes">
+        <section><h3>Shipper</h3><p><strong>Algodoeira Brasil Ltda.</strong><br>Mato Grosso, Brazil<br><em>(sample supplier)</em></p></section>
+        <section><h3>Consignee</h3><p><strong>GoldyBaby S.A.S.</strong><br>Bogotá, Colombia<br>Hypoallergenic baby wear</p></section>
+      </div>
+
+      <div class="doc__condiciones">
+        <p><span>Port of loading</span> Santos, Brazil</p>
+        <p><span>Port of discharge</span> Cartagena, Colombia</p>
+        <p><span>Container</span> 1 × 20' (sample)</p>
+        <p><span>Marks</span> GB-BR-001/170</p>
+        <p><span>Destination</span> Bonded customs warehouse, Cartagena</p>
+        <p><span>Origin</span> Brazil — ACE-72</p>
+      </div>
+
+      <div class="doc__tabla">
+        <table>
+          <thead><tr><th>Pkg Nos.</th><th>Description</th><th>Tariff code</th><th>Packages</th><th>Net weight</th><th>Gross weight</th><th>Size per package</th></tr></thead>
+          <tbody>
+            <tr><td>1 – 20</td><td>Cotton fibre, 100% cotton, not carded or combed</td><td>5201.00.00.30</td><td>20 bales</td><td>4,340 kg</td><td>4,420 kg</td><td>approx. 140 × 70 × 55 cm</td></tr>
+            <tr><td>21 – 140</td><td>Sewing thread</td><td>5401.10.10.00</td><td>120 cartons</td><td>1,440 kg</td><td>1,500 kg</td><td>approx. 60 × 40 × 40 cm</td></tr>
+            <tr><td>141 – 170</td><td>Plastic buttons</td><td>9606.10.00.00</td><td>30 cartons</td><td>750 kg</td><td>765 kg</td><td>approx. 50 × 40 × 30 cm</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="3">Totals</td><td>170 packages</td><td>6,530 kg</td><td>6,685 kg</td><td>≈ 24.1 m³</td></tr></tfoot>
+        </table>
+      </div>
+
+      <p class="doc__nota">Bales are pressed, strapped and wrapped to protect the cotton from humidity; thread and buttons travel in sealed cartons. The cargo goes to a bonded customs warehouse in Cartagena, where DIAN can inspect it if the customs channel is red. Weights and sizes are sample values for the academic exercise.</p>
+      <div class="doc__firma"><span></span><p>Authorized signature — sample</p></div>
+    </article>
+  </template>
+
+  <template id="doc-certificate-origin" data-titulo="Certificate of Origin">
+    <article class="doc">
+      <div class="doc__sello">Sample document — academic exercise</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">CERTIFICATE OF ORIGIN</h2><p class="doc__sub">ACE-72 — Colombia · MERCOSUR</p></div>
+        <div class="sello-origen" aria-hidden="true"><b>ACE-72</b><span>0% TARIFF</span><small>BRAZIL → COLOMBIA</small></div>
+        <dl class="doc__meta">
+          <div><dt>Certificate No.</dt><dd>CO-2026-001</dd></div>
+          <div><dt>Invoice ref.</dt><dd>CI-2026-001</dd></div>
+          <div><dt>Date</dt><dd>Sample</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__partes">
+        <section><h3>Exporter / Producer</h3><p><strong>Algodoeira Brasil Ltda.</strong><br>Mato Grosso, Brazil<br>Registered in Siscomex<br><em>(sample supplier)</em></p></section>
+        <section><h3>Importer</h3><p><strong>GoldyBaby S.A.S.</strong><br>Bogotá, Colombia<br>Hypoallergenic baby wear</p></section>
+      </div>
+
+      <div class="doc__condiciones">
+        <p><span>Agreement</span> ACE-72 (Colombia – MERCOSUR)</p>
+        <p><span>Country of origin</span> Brazil</p>
+        <p><span>Destination</span> Colombia — Cartagena</p>
+        <p><span>Tariff benefit</span> 0% instead of 40%</p>
+      </div>
+
+      <div class="doc__tabla">
+        <table>
+          <thead><tr><th>Tariff code</th><th>Description of goods</th><th>Quantity</th><th>Origin rule</th></tr></thead>
+          <tbody>
+            <tr><td>5201.00.00.30</td><td>Cotton fibre, not carded or combed, fibre length ≥ 28.58 mm</td><td>4,340 kg</td><td>Grown and processed in Brazil</td></tr>
+            <tr><td>5401.10.10.00</td><td>Sewing thread</td><td>1,440 kg</td><td>Produced in Brazil</td></tr>
+            <tr><td>9606.10.00.00</td><td>Plastic buttons</td><td>750 kg</td><td>Produced in Brazil</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="doc__tabla">
+        <table>
+          <tbody>
+            <tr><th>Declaration</th><td>The exporter declares that the goods described above originate in Brazil and meet the origin rules of ACE-72.</td></tr>
+            <tr><th>Issued by</th><td>Authorized issuing entity in Brazil, uploaded to Siscomex by the supplier <em>(sample)</em></td></tr>
+            <tr><th>Used for</th><td>Proving origin to DIAN to apply the 0% tariff in the import declaration</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="doc__nota">Without this certificate the cotton would pay the general 40% tariff. GoldyBaby S.A.S. gives the 10-digit codes to the supplier before shipping so the certificate matches the invoice and the import declaration. This is a sample for the academic exercise, not an official certificate.</p>
+      <div class="doc__firma"><span></span><p>Issuing entity signature &amp; stamp — sample</p></div>
+    </article>
+  </template>
+
+  <template id="doc-transport-document" data-titulo="Transport Document — Bill of Lading">
+    <article class="doc">
+      <div class="doc__sello">Sample document — academic exercise</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">BILL OF LADING (B/L)</h2><p class="doc__sub">Maritime transport — Brazil → Colombia</p></div>
+        <dl class="doc__meta">
+          <div><dt>B/L No.</dt><dd>BL-2026-001</dd></div>
+          <div><dt>Invoice ref.</dt><dd>CI-2026-001</dd></div>
+          <div><dt>Date</dt><dd>Sample</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__partes">
+        <section><h3>Shipper</h3><p><strong>Algodoeira Brasil Ltda.</strong><br>Mato Grosso, Brazil<br><em>(sample supplier)</em></p></section>
+        <section><h3>Consignee / Notify party</h3><p><strong>GoldyBaby S.A.S.</strong><br>Bogotá, Colombia<br>Customs agent: sample</p></section>
+      </div>
+
+      <div class="doc__condiciones">
+        <p><span>Port of loading</span> Santos, Brazil</p>
+        <p><span>Port of discharge</span> Cartagena, Colombia</p>
+        <p><span>Vessel / Voyage</span> Sample</p>
+        <p><span>Container</span> 1 × 20' (sample)</p>
+        <p><span>Freight</span> Collect (FOB)</p>
+        <p><span>Delivery to</span> Bonded customs warehouse</p>
+      </div>
+
+      <div class="ruta" aria-hidden="true"><span>🇧🇷 Santos</span><div class="ruta__mar"><i class="ruta__barco">🚢</i></div><span>Cartagena 🇨🇴</span></div>
+
+      <div class="doc__tabla">
+        <table>
+          <thead><tr><th>Marks</th><th>Packages &amp; description</th><th>Gross weight</th><th>Volume</th></tr></thead>
+          <tbody>
+            <tr><td>GB-BR-001/170</td><td>170 packages: 20 bales of cotton fibre, 120 cartons of sewing thread, 30 cartons of plastic buttons</td><td>6,685 kg</td><td>≈ 24.1 m³</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="doc__nota">The B/L is the mandatory transport document. The shipping line issues it when the cargo is loaded in Brazil, and it proves the shipment and the route. The importer uses it in the DIAN import declaration (Form 500) together with the invoice, the packing list and the certificate of origin. On arrival in Cartagena the cargo moves to a bonded customs warehouse until DIAN grants the release (levante). Sample for the academic exercise.</p>
+      <div class="doc__firma"><span></span><p>Carrier signature — sample</p></div>
+    </article>
+  </template>
+
+  <template id="doc-import-declaration" data-titulo="Import Declaration — Form 500">
+    <article class="doc">
+      <div class="doc__sello">Sample document — academic exercise</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">IMPORT DECLARATION</h2><p class="doc__sub">DIAN — Form 500 · Nationalization of goods</p></div>
+        <dl class="doc__meta">
+          <div><dt>Declaration</dt><dd>Form 500</dd></div>
+          <div><dt>Regime</dt><dd>Import for consumption</dd></div>
+          <div><dt>Date</dt><dd>Sample</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__partes">
+        <section><h3>Importer</h3><p><strong>GoldyBaby S.A.S.</strong><br>Bogotá, Colombia<br>Registered in VUCE with digital signature</p></section>
+        <section><h3>Supplier</h3><p><strong>Algodoeira Brasil Ltda.</strong><br>Mato Grosso, Brazil<br><em>(sample supplier)</em></p></section>
+      </div>
+
+      <div class="doc__condiciones">
+        <p><span>Origin</span> Brazil — ACE-72</p>
+        <p><span>Port of entry</span> Cartagena</p>
+        <p><span>Transport doc.</span> BL-2026-001</p>
+        <p><span>Support docs</span> CI-2026-001 · PL-2026-001 · CO-2026-001</p>
+        <p><span>Import registration</span> Approved in VUCE (with ICA)</p>
+        <p><span>Location</span> Bonded customs warehouse</p>
+      </div>
+
+      <div class="canal" aria-hidden="true"><span class="luces"><i></i><i></i><i></i></span><span><strong>Customs channel:</strong> red → yellow → <strong>green</strong> — free release (sample)</span></div>
+
+      <div class="doc__tabla">
+        <table>
+          <thead><tr><th>Tariff code (10 digits)</th><th>Description</th><th>FOB value</th><th>Tariff</th><th>VAT</th></tr></thead>
+          <tbody>
+            <tr><td>5201.00.00.30</td><td>Cotton fibre, not carded or combed, fibre ≥ 28.58 mm</td><td>USD 7,595.00</td><td>0% (ACE-72)</td><td>19%</td></tr>
+            <tr><td>5401.10.10.00</td><td>Sewing thread</td><td>USD 6,048.00</td><td>0% (ACE-72)</td><td>19%</td></tr>
+            <tr><td>9606.10.00.00</td><td>Plastic buttons</td><td>USD 2,250.00</td><td>0% (ACE-72)</td><td>19%</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="2">Total FOB value</td><td colspan="3">USD 15,893.00</td></tr></tfoot>
+        </table>
+      </div>
+
+      <div class="doc__tabla">
+        <table>
+          <tbody>
+            <tr><th>Freight + insurance</th><td>USD 1,200.00 + USD 100.00 <em>(sample)</em></td></tr>
+            <tr><th>Customs value (CIF)</th><td>USD 17,193.00</td></tr>
+            <tr><th>Tariff (0%)</th><td>USD 0.00 — thanks to ACE-72 and the Certificate of Origin</td></tr>
+            <tr><th>VAT (19%)</th><td><strong>USD 3,266.67</strong> — paid in a bank authorized by DIAN, in COP at the exchange rate of the day</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="doc__nota">After paying the VAT, the data is sent to DIAN and the system assigns the customs channel: green (free release), yellow (document review) or red (physical inspection of the cargo in the port warehouse). With the DIAN release (levante) the cotton can be loaded on the truck and taken to the factory. Values are samples for the academic exercise.</p>
+      <div class="doc__firma"><span></span><p>Importer / customs agent signature — sample</p></div>
+    </article>
+  </template>
+
+  <template id="doc-dian-vuce" data-titulo="DIAN &amp; VUCE Procedures">
+    <article class="doc">
+      <div class="doc__sello">Step by step — from the project document</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">DIAN &amp; VUCE PROCEDURES</h2><p class="doc__sub">How GoldyBaby S.A.S. imports legally from Brazil</p></div>
+        <dl class="doc__meta">
+          <div><dt>VUCE</dt><dd>Permits</dd></div>
+          <div><dt>DIAN</dt><dd>Taxes &amp; customs</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__pasos">
+        <details open>
+          <summary><b>1</b> Business preparation</summary>
+          <ul>
+            <li><strong>Check in Brazil:</strong> confirm the supplier is active in Siscomex and authorized to issue the MERCOSUR Certificate of Origin.</li>
+            <li><strong>Register in VUCE:</strong> buy the digital signature in Colombia and register GoldyBaby S.A.S. as an official importer on the VUCE platform.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><b>2</b> Virtual permits (VUCE)</summary>
+          <ul>
+            <li><strong>ICA approval:</strong> request the phytosanitary review in VUCE with the certificates showing the cotton is free of pests.</li>
+            <li><strong>Import registration:</strong> fill in the digital form with the codes 5201.00.00.30 or 5203.00.00.00, the costs and the ICA approval.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><b>3</b> Logistics &amp; transport</summary>
+          <ul>
+            <li><strong>Shipment (B/L):</strong> the cargo leaves Brazil by ship and the mandatory transport document is issued.</li>
+            <li><strong>Arrival at port:</strong> the cargo is received in Cartagena and moved to a bonded customs warehouse.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><b>4</b> Nationalization (DIAN)</summary>
+          <ul>
+            <li><strong>Form 500:</strong> fill in the Import Declaration in the DIAN system with 0% tariff (ACE-72) and 19% VAT.</li>
+            <li><strong>Tax payment:</strong> pay the VAT in a bank authorized by DIAN.</li>
+            <li><strong>Customs channel:</strong> the system assigns the review channel (see below).</li>
+            <li><strong>Release (levante):</strong> final DIAN authorization to load the cotton on a truck and take it straight to the factory.</li>
+          </ul>
+          <div class="doc__semaforo">
+            <p class="sem sem--verde"><i></i><strong>Green</strong> Free release right away</p>
+            <p class="sem sem--amarillo"><i></i><strong>Yellow</strong> Document review</p>
+            <p class="sem sem--rojo"><i></i><strong>Red</strong> Physical inspection in the port warehouse</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="doc__nota">Cotton fibre does not need INVIMA registration; the plant health review is done with the ICA. Without these procedures there is no legal import: VUCE handles the permits and DIAN handles taxes and customs release.</p>
+    </article>
+  </template>
+
+  <template id="doc-loan-support" data-titulo="Loan support — Bancolombia">
+    <article class="doc doc--banco">
+      <div class="doc__sello">Simulated document — not issued by Bancolombia</div>
+      <header class="doc__encabezado">
+        <div><h2 class="doc__titulo">LOAN APPROVAL CERTIFICATE</h2><p class="doc__sub">Support of the starting capital</p></div>
+        <dl class="doc__meta">
+          <div><dt>Reference</dt><dd>SIM-GB-2024-001</dd></div>
+          <div><dt>Date</dt><dd>August 2024 (simulated)</dd></div>
+        </dl>
+      </header>
+
+      <div class="doc__partes">
+        <section><h3>Lender</h3><p><strong>Bancolombia</strong><br>Commercial bank loan</p></section>
+        <section><h3>Borrower</h3><p><strong>GoldyBaby S.A.S.</strong><br>Colombia<br>ECCI University project 2026</p></section>
+      </div>
+
+      <div class="doc__tabla">
+        <table>
+          <tbody>
+            <tr><th>Amount approved</th><td><strong>COP 30,000,000</strong> (thirty million Colombian pesos)</td></tr>
+            <tr><th>Source of funds</th><td>Bancolombia</td></tr>
+            <tr><th>Status</th><td>Approved and disbursed (simulated)</td></tr>
+            <tr><th>Repayment source</th><td>Income from advertising campaigns and sales, including home delivery</td></tr>
+            <tr><th>Repayment status</th><td>Paid in full (simulated)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="doc__nota">This certificate is a simulation made for an academic exercise at ECCI University. It supports the financing plan of the GoldyBaby project, but it is not a real bank document and no real loan was requested.</p>
+      <div class="doc__firma"><span></span><p>Authorized signature — simulated</p></div>
+    </article>
+  </template>
+
+  <!-- Logica: una clase por archivo; Principal.js va al final -->
+  <script src="js/BarraNavegacion.js"></script>
+  <script src="js/ModalDocumento.js"></script>
+  <script src="js/CargadorPagina.js"></script>
+  <script src="js/HiloProgreso.js"></script>
+  <script src="js/RevelarAlScroll.js"></script>
+  <script src="js/Principal.js"></script>
+</body>
+</html>

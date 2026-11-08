@@ -1,0 +1,187 @@
+/* ==========================================================
+   animaciones.css - animaciones propias del proyecto GoldyBaby
+   Cada animacion cuenta una parte del plan: el algodon que sale de
+   Brasil, el barco hacia Cartagena, los documentos de importacion y el
+   semaforo aduanero de la DIAN.
+   ========================================================== */
+
+/* ---------- Pagina cargando: la ruta del algodon Brasil -> Colombia ---------- */
+body.cargando { overflow: hidden; }
+
+.cargador {
+  position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px; overflow: hidden;
+  background: radial-gradient(circle at 30% 20%, #FFF4F7 0, #FFF9F7 45%, #E8F4FC 100%);
+  transition: opacity .7s ease, transform .7s ease, visibility .7s;
+  animation: cargador-seguro .5s ease 10s forwards; /* red de seguridad si el JS falla */
+}
+.cargador--fuera { opacity: 0; transform: scale(1.04); visibility: hidden; pointer-events: none; }
+@keyframes cargador-seguro { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+
+.cargador__copo { position: absolute; bottom: -50px; width: 30px; height: 30px; opacity: .8; animation: copo-sube 7s linear infinite; }
+@keyframes copo-sube { 0% { transform: translateY(0) translateX(0) rotate(0); opacity: 0; } 12% { opacity: .85; } 100% { transform: translateY(-110vh) translateX(40px) rotate(220deg); opacity: 0; } }
+
+.cargador__tarjeta { position: relative; width: min(94vw, 440px); text-align: center; color: var(--navy); }
+.cargador__logo { position: relative; width: 84px; height: 84px; margin: 0 auto 10px; border-radius: 50%; background: #fff; border: 2px solid var(--pink-soft); padding: 6px; box-shadow: 0 10px 26px rgba(63,78,115,.14); }
+.cargador__logo img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+.cargador__logo::after { content: ""; position: absolute; inset: -8px; border-radius: 50%; border: 2px solid var(--blue-soft); animation: pulso-anillo 1.6s ease-out infinite; }
+@keyframes pulso-anillo { from { transform: scale(.9); opacity: .9; } to { transform: scale(1.35); opacity: 0; } }
+.cargador__titulo { margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 30px; line-height: 1; }
+.cargador__titulo span { color: var(--blue); }
+.cargador__sub { margin: 6px 0 14px; font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+
+.cargador__escena { background: linear-gradient(180deg, #E8F4FC 0, #fff 100%); border: 1px solid var(--pink-soft); border-radius: 22px; padding: 8px 8px 0; overflow: hidden; box-shadow: 0 12px 34px rgba(63,78,115,.1); }
+.cargador__svg { display: block; width: 100%; height: auto; }
+.cargador__puertos { display: flex; justify-content: space-between; padding: 6px 12px 8px; font-size: 11px; font-weight: 800; color: var(--muted); }
+
+/* Algodon que brota en Brasil */
+.cargador__svg .bola { transform-box: fill-box; transform-origin: 50% 100%; animation: brota .7s cubic-bezier(.3,1.6,.5,1) both; }
+.cargador__svg .bola--1 { animation-delay: .2s; } .cargador__svg .bola--2 { animation-delay: .5s; } .cargador__svg .bola--3 { animation-delay: .8s; }
+@keyframes brota { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+/* Olas */
+.cargador__svg .olas { animation: olas 2.2s linear infinite; }
+.cargador__svg .olas--atras { animation-duration: 3.2s; animation-direction: reverse; }
+@keyframes olas { to { transform: translateX(-60px); } }
+/* Barco con balas de algodon: navega de Santos a Cartagena */
+.cargador__svg .barco { transform: translate(calc(44px + var(--viaje, 0) * 192px), 90px); }
+.cargador__svg .barco__casco { animation: mecer 1.1s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes mecer { from { transform: rotate(-2.2deg) translateY(0); } to { transform: rotate(2.2deg) translateY(-2px); } }
+/* Grua que baja la carga en Cartagena */
+.cargador__svg .gancho { animation: gancho 1.6s ease-in-out infinite alternate; }
+@keyframes gancho { from { transform: translateY(0); } to { transform: translateY(10px); } }
+
+/* Hilo de coser como barra de progreso */
+.cargador__hilo { position: relative; height: 14px; margin: 16px 6px 0; }
+.cargador__hilo::before { content: ""; position: absolute; left: 0; right: 0; top: 6px; border-top: 2px dotted #D9C7D0; }
+.cargador__puntada { position: absolute; left: 0; top: 5px; height: 3px; width: 0; border-radius: 3px; background: repeating-linear-gradient(90deg, var(--blue) 0 9px, transparent 9px 13px); }
+.cargador__aguja { position: absolute; top: 0; left: 0; width: 34px; transform: translateX(-12%); }
+.cargador__aguja svg { display: block; width: 34px; height: 14px; animation: puntada .45s ease-in-out infinite alternate; }
+@keyframes puntada { from { transform: translateY(-2px) rotate(-6deg); } to { transform: translateY(2px) rotate(6deg); } }
+
+.cargador__estado { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 12px 6px 0; font-size: 12px; font-weight: 800; text-align: left; }
+.cargador__estado output { font-family: 'Fredoka', sans-serif; font-size: 16px; color: var(--blue); min-width: 44px; text-align: right; }
+
+/* Semaforo aduanero: rojo (faltan papeles) -> amarillo (en revision) -> verde (levante) */
+.cargador__canal { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 6px 14px; border-radius: 999px; background: #fff; border: 1px solid var(--pink-soft); font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.luces { display: inline-flex; gap: 5px; }
+.luces i { width: 12px; height: 12px; border-radius: 50%; background: currentColor; opacity: .22; transition: opacity .3s, box-shadow .3s; }
+.luces i:nth-child(1) { color: #E26A6A; } .luces i:nth-child(2) { color: #F2C14E; } .luces i:nth-child(3) { color: #5DB075; }
+[data-canal="rojo"] .luces i:nth-child(1), [data-canal="amarillo"] .luces i:nth-child(2), [data-canal="verde"] .luces i:nth-child(3) { opacity: 1; box-shadow: 0 0 10px currentColor; }
+
+/* ---------- Hilo de coser que avanza con el scroll ---------- */
+.hilo { position: fixed; top: 0; left: 0; right: 0; height: 16px; z-index: 70; pointer-events: none; --avance: 0; }
+.hilo__linea { position: absolute; top: 0; left: 0; height: 3px; width: min(calc(var(--avance) * 1%), calc(100% - 28px)); background: repeating-linear-gradient(90deg, var(--blue) 0 9px, transparent 9px 13px); }
+.hilo__aguja { position: absolute; top: -5px; left: min(calc(var(--avance) * 1%), calc(100% - 28px)); width: 30px; transform: translateX(-14%); }
+.hilo__aguja svg { display: block; width: 30px; height: 12px; filter: drop-shadow(0 1px 1px rgba(63,78,115,.3)); animation: puntada .45s ease-in-out infinite alternate; }
+
+/* ---------- Aparicion al hacer scroll ---------- */
+.js .revela { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.8,.3,1); }
+.js .revela--visible { opacity: 1; transform: none; }
+/* Las tarjetas de documentos llegan "selladas", como un sello de la DIAN */
+.js .revela--sello { opacity: 0; transform: scale(1.18) rotate(-3deg); transition: none; }
+.js .revela--sello.revela--visible { animation: sellar .6s cubic-bezier(.3,1.4,.5,1) both; animation-delay: calc(var(--i, 0) * 110ms); }
+@keyframes sellar { 0% { opacity: 0; transform: scale(1.18) rotate(-3deg); } 55% { opacity: 1; transform: scale(.97) rotate(.6deg); } 100% { opacity: 1; transform: none; } }
+
+/* La franja de algodon avanza como una cinta transportadora */
+.franja-algodon { animation: franja-avanza 36s linear infinite; }
+@keyframes franja-avanza { to { background-position: 300px center; } }
+
+/* ==========================================================
+   Documentos como pergamino con textura de algodon
+   ========================================================== */
+.modal__caja.pergamino {
+  max-width: 840px; background: transparent; box-shadow: none; border-radius: 0; overflow: visible;
+  max-height: 94vh; animation: none;
+}
+.pergamino__vara {
+  position: relative; z-index: 3; flex: none; height: 26px; margin: 0 -8px; border-radius: 14px;
+  background: linear-gradient(180deg, #6e4524 0%, #b98649 22%, #f0d19a 48%, #c18f50 72%, #6a4122 100%);
+  box-shadow: 0 6px 14px rgba(60,35,10,.35), inset 0 -2px 3px rgba(0,0,0,.25);
+}
+.pergamino__vara::before, .pergamino__vara::after {
+  content: ""; position: absolute; top: 50%; width: 18px; height: 36px; transform: translateY(-50%); border-radius: 9px;
+  background: linear-gradient(180deg, #5b3719 0%, #a9763b 30%, #e8c78c 50%, #a9763b 70%, #5b3719 100%);
+  box-shadow: 0 3px 8px rgba(60,35,10,.4);
+}
+.pergamino__vara::before { left: -6px; } .pergamino__vara::after { right: -6px; }
+
+.pergamino__hoja {
+  position: relative; z-index: 1; flex: 0 1 auto; min-height: 0; display: flex; flex-direction: column; overflow: hidden; margin: 0 6px;
+  background-color: #FBF5E8;
+  background-image:
+    linear-gradient(180deg, rgba(120,80,40,.22) 0, rgba(120,80,40,0) 46px, rgba(120,80,40,0) calc(100% - 46px), rgba(120,80,40,.22) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='m' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.03' numOctaves='4' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1.7 0 0 0 -0.78'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23m)'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.01 0.42' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.70  0 0 0 0 0.57  0 0 0 0 0.42  0 0 0 0.8 -0.32'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23f)'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55  0 0 0 0 0.42  0 0 0 0 0.3  0 0 0 0.6 -0.2'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 18% 22%, rgba(130,95,55,.16) 0 1px, transparent 2px),
+    radial-gradient(circle at 70% 64%, rgba(130,95,55,.13) 0 1.2px, transparent 2.4px);
+  background-size: 100% 100%, 260px 260px, 320px 320px, 180px 180px, 97px 113px, 143px 89px;
+  box-shadow: inset 12px 0 16px -12px rgba(120,80,40,.4), inset -12px 0 16px -12px rgba(120,80,40,.4);
+  animation: desenrollar .8s cubic-bezier(.22,.8,.3,1) both;
+}
+@keyframes desenrollar { from { max-height: 0; } to { max-height: calc(94vh - 52px); } }
+@keyframes enrollar { from { max-height: calc(94vh - 52px); } to { max-height: 0; } }
+.modal--cerrando .pergamino__hoja { animation: enrollar .45s cubic-bezier(.5,0,.75,.4) both; }
+.modal--cerrando .modal__fondo { opacity: 0; transition: opacity .45s ease; }
+
+.pergamino .modal__barra { background: transparent; border-bottom: 2px dashed rgba(150,110,70,.35); }
+.pergamino .modal__contenido { flex: 1 1 auto; min-height: 0; padding: 16px 18px; }
+.pergamino .doc { background: transparent; border: 0; padding: 6px 6px 10px; }
+.pergamino .doc__partes section { background: rgba(232,244,252,.72); }
+.pergamino .doc__tabla tbody td { background: rgba(255,252,245,.86); }
+.pergamino .doc__tabla tbody tr { animation: carga-fila .5s ease both; }
+.pergamino .doc__tabla tbody tr:nth-child(1) { animation-delay: .9s; } .pergamino .doc__tabla tbody tr:nth-child(2) { animation-delay: 1.05s; }
+.pergamino .doc__tabla tbody tr:nth-child(3) { animation-delay: 1.2s; } .pergamino .doc__tabla tbody tr:nth-child(4) { animation-delay: 1.35s; }
+@keyframes carga-fila { from { opacity: 0; transform: translateX(-22px); } to { opacity: 1; transform: none; } }
+
+/* Logo de la empresa al pie del pergamino */
+.pergamino__pie { flex: none; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 12px 18px 16px; border-top: 2px dashed rgba(150,110,70,.35); }
+.pergamino__pie img { width: 56px; height: 56px; object-fit: contain; border-radius: 50%; background: #fff; padding: 4px; border: 2px solid var(--pink-soft); box-shadow: 0 4px 12px rgba(63,78,115,.15); }
+.pergamino__pie strong { display: block; font-family: 'Fredoka', sans-serif; font-size: 18px; line-height: 1.1; color: var(--navy); }
+.pergamino__pie strong span { color: var(--blue); }
+.pergamino__pie small { display: block; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- Animaciones dentro de cada documento ---------- */
+/* Certificate of Origin: sello ACE-72 que se estampa */
+.doc .sello-origen {
+  flex: none; align-self: center; width: 104px; height: 104px; border-radius: 50%; display: grid; place-content: center; text-align: center;
+  color: var(--blue); border: 3px double var(--blue); box-shadow: inset 0 0 0 4px rgba(74,147,204,.12); mix-blend-mode: multiply; transform: rotate(-12deg); opacity: .88;
+  font-family: 'Fredoka', sans-serif; line-height: 1.1; animation: estampar .55s cubic-bezier(.3,1.5,.5,1) 1.2s both;
+}
+.sello-origen b { font-size: 19px; } .sello-origen span { font-size: 11px; font-weight: 700; letter-spacing: .08em; } .sello-origen small { font-size: 8px; font-weight: 700; letter-spacing: .1em; }
+@keyframes estampar { 0% { opacity: 0; transform: scale(2.4) rotate(-32deg); } 60% { opacity: 1; transform: scale(.92) rotate(-10deg); } 100% { opacity: .88; transform: scale(1) rotate(-12deg); } }
+
+/* Transport Document: el barco recorre Santos -> Cartagena */
+.ruta { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; padding: 10px 14px; border-radius: 14px; background: rgba(232,244,252,.72); font-size: 12px; font-weight: 800; }
+.ruta__mar { position: relative; flex: 1; height: 26px; border-bottom: 2px dashed var(--blue); }
+.ruta__barco { position: absolute; bottom: -4px; left: 0; font-style: normal; font-size: 22px; animation: ruta-navega 3.4s ease-in-out .9s both, mecer 1s ease-in-out infinite alternate; }
+@keyframes ruta-navega { from { left: 0; } to { left: calc(100% - 24px); } }
+
+/* Import Declaration: el semaforo de la DIAN termina en verde */
+.canal { display: flex; align-items: center; gap: 14px; margin: 0 0 16px; padding: 10px 14px; border-radius: 14px; background: rgba(249,225,232,.6); font-size: 12px; font-weight: 700; }
+.canal .luces { padding: 7px 9px; border-radius: 999px; background: var(--navy); gap: 7px; }
+.canal .luces i { width: 14px; height: 14px; opacity: 1; filter: brightness(.45); box-shadow: none; }
+.canal .luces i:nth-child(1) { animation: luz-pasa .9s ease 1.0s both; }
+.canal .luces i:nth-child(2) { animation: luz-pasa .9s ease 1.9s both; }
+.canal .luces i:nth-child(3) { animation: luz-fija .6s ease 2.8s both; }
+@keyframes luz-pasa { 0%, 100% { filter: brightness(.45); box-shadow: none; } 15%, 85% { filter: brightness(1.2); box-shadow: 0 0 12px currentColor; } }
+@keyframes luz-fija { from { filter: brightness(.45); box-shadow: none; } to { filter: brightness(1.2); box-shadow: 0 0 14px currentColor; } }
+
+/* DIAN & VUCE: los pasos entran uno a uno */
+.pergamino .doc__pasos details { animation: paso-entra .5s ease both; }
+.pergamino .doc__pasos details:nth-child(1) { animation-delay: .9s; } .pergamino .doc__pasos details:nth-child(2) { animation-delay: 1.05s; }
+.pergamino .doc__pasos details:nth-child(3) { animation-delay: 1.2s; } .pergamino .doc__pasos details:nth-child(4) { animation-delay: 1.35s; }
+@keyframes paso-entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.doc__semaforo .sem i { animation: latido 1.6s ease-in-out infinite; }
+.doc__semaforo .sem--amarillo i { animation-delay: .25s; } .doc__semaforo .sem--rojo i { animation-delay: .5s; }
+@keyframes latido { 0%, 100% { box-shadow: 0 0 0 0 transparent; } 50% { box-shadow: 0 0 10px 2px currentColor; } }
+.sem--verde { color: #5DB075; } .sem--amarillo { color: #D9A92E; } .sem--rojo { color: #E26A6A; }
+.doc__semaforo .sem strong { color: var(--navy); } .doc__semaforo .sem { color: inherit; }
+.doc__semaforo .sem { color: var(--navy); }
+.doc__semaforo .sem--verde i { background: #5DB075; color: #5DB075; } .doc__semaforo .sem--amarillo i { background: #F2C14E; color: #F2C14E; } .doc__semaforo .sem--rojo i { background: #E26A6A; color: #E26A6A; }
+
+/* ---------- Respeto a quien prefiere menos movimiento ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .cargador__copo, .franja-algodon, .cargador__svg .olas, .cargador__logo::after, .hilo__aguja svg, .cargador__aguja svg { animation: none; }
+  .js .revela, .js .revela--sello { opacity: 1; transform: none; transition: none; animation: none; }
+  .pergamino__hoja, .pergamino .doc__tabla tbody tr, .pergamino .doc__pasos details { animation-duration: .01s; animation-delay: 0s; }
+  .doc .sello-origen, .ruta__barco, .canal .luces i { animation-duration: .01s; animation-delay: 0s; }
+  .canal .luces i:nth-child(1), .canal .luces i:nth-child(2) { animation: none; }
+}
